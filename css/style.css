@@ -140,4 +140,28 @@ section {
   padding-right: 10px;
   margin-left: 5px;
 }
+
+.about__me {
+  margin-bottom: 30px;
+}
+
+.about__event__item dt {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.about__event__item dd {
+  font-size: 11px;
+}
+.about__event__item time {
+  font-size: 10px;
+}
+.about__event__item span {
+  font-size: 10px;
+}
+.about__event__item span::before {
+  content: "/at";
+  font-size: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+}
 /*# sourceMappingURL=style.css.map */
