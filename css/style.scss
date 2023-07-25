@@ -165,7 +165,7 @@ section{
 
         &::before{
             content: "/";
-            font-size: 30px;
+            font-size: 24px;
             padding-right: 10px;
             margin-left: 5px;
         }
@@ -199,5 +199,15 @@ section{
             padding-right: 10px;
             margin-left: 5px;
         }
+    }
+}
+
+//skill
+
+.skill__container{
+    display: grid;
+
+    & dl dd{
+        font-size: 14px;
     }
 }
