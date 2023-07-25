@@ -156,5 +156,17 @@ section{
 }
 
 .content__title{
-    
+    font-size: 24px;
+    margin-bottom: 15px;
+
+    & span{
+        font-size: 14px;
+
+        &::before{
+            content: "/";
+            font-size: 30px;
+            padding-right: 10px;
+            margin-left: 5px;
+        }
+    }
 }
