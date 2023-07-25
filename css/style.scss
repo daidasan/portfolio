@@ -78,7 +78,7 @@ header {
         border-bottom: 1px solid $black-color;
     }
 
-    &__list{
+    &__list {
         padding-bottom: 15px;
     }
 
@@ -96,14 +96,15 @@ header {
     background-position: left;
     background-size: cover;
 
-    & h1{
+    & h1 {
         font-size: 48px;
         margin-bottom: 15px;
     }
-    & p{
+
+    & p {
         font-size: 14px;
 
-        &:last-child{
+        &:last-child {
             display: inline-block;
             margin-top: 10px;
         }
@@ -113,40 +114,43 @@ header {
 
 //footer
 
-footer{
+footer {
     height: 50px;
     border-top: 1px solid $black-color;
     text-align: center;
 }
 
 //section
-section{
+section {
     margin: 100px 0;
 }
-.sec__title{
+
+.sec__title {
     font-size: 48px;
     font-weight: normal;
 
-    & span{
+    & span {
         font-size: 18px;
         margin-left: 50px;
     }
-    &::before{
+
+    &::before {
         content: "【";
         font-size: 32px;
         padding-right: 10px;
     }
-    &::after{
+
+    &::after {
         content: "】";
         font-size: 32px;
         padding-left: 10px;
     }
 
-    &__container{
+    &__container {
         align-items: end;
         margin-bottom: 50px;
 
-        & p{
+        & p {
             display: block;
             padding-bottom: 10px;
             margin-left: 10px;
@@ -155,15 +159,15 @@ section{
 
 }
 
-.content__title{
+.content__title {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: normal;
 
-    & span{
+    & span {
         font-size: 14px;
 
-        &::before{
+        &::before {
             content: "/";
             font-size: 24px;
             padding-right: 10px;
@@ -174,26 +178,29 @@ section{
 
 
 //about
-.about__me{
+.about__me {
     margin-bottom: 30px;
 }
-.about__event__item{
 
-    & dt{
+.about__event__item {
+
+    & dt {
         margin-bottom: 10px;
         font-size: 14px;
     }
-    & dd{
+
+    & dd {
         font-size: 11px;
     }
-    & time{
+
+    & time {
         font-size: 10px;
     }
 
-    & span{
+    & span {
         font-size: 10px;
 
-        &::before{
+        &::before {
             content: "/at";
             font-size: 10px;
             padding-right: 10px;
@@ -204,12 +211,23 @@ section{
 
 //skill
 
-.skill__container{
+.skill__container {
     display: grid;
 
-    & dl dd{
+    & dl dd {
         font-size: 14px;
     }
 }
 
 //works
+.works {
+
+    &__list {
+        font-size: 18px;
+    }
+    &__item+&__item::before{
+        content: "|";
+        font-size: 18px;
+        margin: 0 20px;
+    }
+}
