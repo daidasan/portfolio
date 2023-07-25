@@ -14,7 +14,7 @@ $black-color:#333;
 //------------------------
 
 
-/* 共通部分 */
+//共通部分---------------------------
 
 body {
     font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
@@ -55,7 +55,7 @@ address {
     display: flex;
 }
 
-//header
+//header-------------------------------------
 header {
     height: 100px;
     width: 100%;
@@ -112,7 +112,7 @@ header {
 
 }
 
-//footer
+//footer---------------------------------------
 
 footer {
     height: 50px;
@@ -120,7 +120,7 @@ footer {
     text-align: center;
 }
 
-//section
+//section--------------------------------------
 section {
     margin: 100px 0;
 }
@@ -177,7 +177,7 @@ section {
 }
 
 
-//about
+//about----------------------------------
 .about__me {
     margin-bottom: 30px;
 }
@@ -209,7 +209,7 @@ section {
     }
 }
 
-//skill
+//skill--------------------
 
 .skill__container {
     display: grid;
@@ -219,9 +219,10 @@ section {
     }
 }
 
-//works
-.works {
+//works---------------------
 
+.works {
+//works_nav
     &__list {
         font-size: 18px;
     }
@@ -230,4 +231,24 @@ section {
         font-size: 18px;
         margin: 0 20px;
     }
+
+    //glid
+    &glid__box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 40px;
+    }
+
+    &glid__item{
+        &figcaption{
+            font-size: 14px;
+        }
+        & div p,
+        & div time{
+            font-size: 10px;
+        }
+
+    }
+
+    
 }
