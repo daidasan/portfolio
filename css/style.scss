@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+//変数--------------------
+$pc: 769px;
+
+@mixin pc {
+    @media(min-width:($pc)) {
+        @content;
+    }
+}
+
+$white-color:#f8f8f8;
+$black-color:#333;
+//------------------------
+
+
+/* 共通部分 */
+
+body {
+    font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: $black-color;
+    background: $white-color;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: $black-color;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+//header
+header {
+    height: 100px;
+    width: 100%;
+    padding: 0 4%;
+    background: $white-color;
+    position: fixed;
+    top: 0;
+}
+
+.gnav {
+    justify-content: space-between;
+    height: 100px;
+    padding-top: 30px;
+    font-size: 18px;
+    align-items: end;
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+        border-bottom: 1px solid $black-color;
+    }
+
+    &__list{
+        padding-bottom: 15px;
+    }
+
+    &__item+&__item {
+        margin-left: 30px;
+    }
+}
+
+.topImg {
+    padding-left: 4%;
+    margin-top: 150px;
+    background-image: url(../img/bigbg01.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: left;
+    background-size: cover;
+
+    & h1{
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    & p{
+        font-size: 14px;
+
+        &:last-child{
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+//footer
+
+footer{
+    height: 50px;
+    border-top: 1px solid $black-color;
+    text-align: center;
+}
+
+//section
+section{
+    margin: 100px 0;
+}
+.sec__title{
+    font-size: 48px;
+    font-weight: normal;
+
+    & span{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    &::before{
+        content: "【";
+        font-size: 32px;
+        padding-right: 10px;
+    }
+    &::after{
+        content: "】";
+        font-size: 32px;
+        padding-left: 10px;
+    }
+
+    &__container{
+        align-items: end;
+        margin-bottom: 50px;
+
+        & p{
+            display: block;
+            padding-bottom: 10px;
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.content__title{
+    
+}
