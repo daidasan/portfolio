@@ -94,7 +94,7 @@ footer {
 }
 
 section {
-  margin: 100px 0;
+  padding-top: 100px;
 }
 
 .sec__title {
@@ -173,6 +173,7 @@ section {
 
 .works__list {
   font-size: 18px;
+  margin-bottom: 30px;
 }
 .works__item + .works__item::before {
   content: "|";
@@ -187,7 +188,14 @@ section {
 .worksglid__itemfigcaption {
   font-size: 14px;
 }
-.worksglid__item div p, .worksglid__item div time {
+.works__glid__cap {
   font-size: 10px;
+  margin-bottom: 5px;
+}
+.works__glid__cap p::after {
+  content: "|";
+  font-size: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
