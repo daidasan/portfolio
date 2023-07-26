@@ -53,12 +53,13 @@ img {
 
 //header-------------------------------------
 header {
-    height: 80px;
+    height: 90px;
     width: 100%;
     padding: 0 4%;
     background: $white-color;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 //gnav-------------
@@ -206,7 +207,7 @@ header {
     }
 
     &__list {
-        padding-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     &__item+&__item {
@@ -284,7 +285,7 @@ section {
 .sec__content__box{
 
     @include pc{
-        width: 90%;
+        width: 85%;
     }
 }
 

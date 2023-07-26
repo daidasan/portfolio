@@ -35,12 +35,13 @@ img {
 }
 
 header {
-  height: 80px;
+  height: 90px;
   width: 100%;
   padding: 0 4%;
   background: #f8f8f8;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .mobile-menu {
@@ -183,7 +184,7 @@ header {
   border-bottom: 1px solid #333;
 }
 .gnav__list {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 .gnav__item + .gnav__item {
   margin-left: 30px;
@@ -243,7 +244,7 @@ section {
 
 @media (min-width: 769px) {
   .sec__content__box {
-    width: 90%;
+    width: 85%;
   }
 }
 
