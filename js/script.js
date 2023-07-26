@@ -1,5 +1,6 @@
 'use strict';
 
+//slider----------------------------------------------
 //画像の設定
 
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
@@ -28,3 +29,20 @@ $('#slider').vegas({
 		slides: responsiveImage,//画像設定を読む
 		//timer:false,// プログレスバーを非表示したい場合はこのコメントアウトを外してください
 	});
+
+
+//---------------------------------------------------
+
+
+
+//gnav----------------------------------------------
+
+    $(".openbtn").click(function () {//ボタンがクリックされたら
+        $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+        $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    });
+    
+    $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+        $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+        $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+    });

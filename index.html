@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,20 @@
         <nav class="gnav flex">
             <div class="gnav__logo"><a href="index.html" class="gnav__logo__link"><img src="img/logo.svg" alt="" class="gnav__img" width="70" height="55"></a></div>
             <!-- モバイル用ハンバーガーメニュー -->
-            <div class="mobile-menu"></div>
+            <div class="mobile-menu">
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list">
+                        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="#">Top</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             <!-- デスクトップ用メニュー -->
             <div class="desktop-menu">
                 <ul class="gnav__list flex">
@@ -32,7 +46,7 @@
 
 
     <div class="wrapper top">
-        <div class="top__Img"  id="slider"></div>
+        <div class="top__Img" id="slider"></div>
         <div class="top__Title">
             <h1>misuzu daida</h1>
             <p>graphic&web design/</p>
@@ -51,8 +65,8 @@
             </div>
             <div class="about__me">
                 <div class="about__me__imgBox"><img src="img/about_me.svg" alt="" width="297" height="303"></div>
-                    <h3 class="content__title">代田 美須寿<span>misuzu daida</span></h3>
-                    <p>専門学校でグラフィックデザインを学び、イラストを専攻。友人と3人でハンドメイド雑貨ショップ「コッペパン」を結成し、学園祭やフリーマーケットに出店。卒業後は印刷会社でDTPオペレーターとして3年勤務。IllustratorやInDesign、Photoshopを使用してフライヤーからページの多い冊子まで、印刷前のデータ作成を行う。その後ギャラリーとライブハウスを併設した喫茶店に2年半勤め、喫茶店業務や事務に加え、イベントフライヤーやお店の広告物の作成をする。2023年3月よりパソコンスクールHA*NAへ入校し、Webデザインやコーディングを学ぶ。</p>
+                <h3 class="content__title">代田 美須寿<span>misuzu daida</span></h3>
+                <p>専門学校でグラフィックデザインを学び、イラストを専攻。友人と3人でハンドメイド雑貨ショップ「コッペパン」を結成し、学園祭やフリーマーケットに出店。卒業後は印刷会社でDTPオペレーターとして3年勤務。IllustratorやInDesign、Photoshopを使用してフライヤーからページの多い冊子まで、印刷前のデータ作成を行う。その後ギャラリーとライブハウスを併設した喫茶店に2年半勤め、喫茶店業務や事務に加え、イベントフライヤーやお店の広告物の作成をする。2023年3月よりパソコンスクールHA*NAへ入校し、Webデザインやコーディングを学ぶ。</p>
             </div>
 
             <div class="about__event">
@@ -84,7 +98,7 @@
             </div>
 
         </section>
-            
+
         <!-- works--------------------------------------- -->
         <section class="works" id="works">
             <div class="sec__title__container flex">
@@ -134,21 +148,44 @@
 
     <!-- adobe font -->
     <script>
-  (function(d) {
-    var config = {
-      kitId: 'soi2uzj',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-<!-- slider -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-<!--自作のJS-->
-<script src="js/script.js"></script>
+        (function (d) {
+            var config = {
+                    kitId: 'soi2uzj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- gnav -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- slider -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/script.js"></script>
 
 
 </body>
+
 </html>
