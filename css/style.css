@@ -191,12 +191,13 @@ header {
 }
 
 .top {
-  margin-top: 120px;
+  padding-left: 4%;
+  margin-top: 100px;
   position: relative;
 }
 .top__Title {
   position: absolute;
-  top: 0;
+  top: 0px;
 }
 .top__Title h1 {
   font-size: 48px;
@@ -215,7 +216,6 @@ header {
   height: 88vh;
   margin-right: 0;
   margin-left: auto;
-  z-index: 100;
 }
 @media (min-width: 769px) {
   #slider {
