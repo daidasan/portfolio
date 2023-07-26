@@ -226,6 +226,7 @@ section {
     &__list {
         font-size: 18px;
         margin-bottom: 30px;
+        justify-content: center;
     }
     &__item+&__item::before{
         content: "|";
