@@ -209,9 +209,18 @@ header {
 
 #slider {
   width: 90%;
-  height: 100vh;
+  height: 88vh;
   margin-right: 0;
   margin-left: auto;
+  z-index: 100;
+}
+@media (min-width: 769px) {
+  #slider {
+    width: 85%;
+    height: 88vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 footer {
