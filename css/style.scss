@@ -42,7 +42,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -53,7 +53,7 @@ img {
 
 //header-------------------------------------
 header {
-    height: 100px;
+    height: 80px;
     width: 100%;
     padding: 0 4%;
     background: $white-color;
@@ -195,8 +195,7 @@ header {
 //デスクトップ用メニュー-----
 .gnav {
     justify-content: space-between;
-    height: 100px;
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 18px;
     align-items: end;
 
@@ -221,7 +220,7 @@ header {
 
 .top {
     padding-left: 4%;
-    margin-top: 100px;
+    margin-top: 90px;
     position: relative;
 
     &__Title {
@@ -274,6 +273,11 @@ footer {
 //section--------------------------------------
 section {
     padding-top: 100px;
+
+    @include pc{
+        display: flex;
+    }
+    
 }
 
 .sec__title {
@@ -305,6 +309,11 @@ section {
             display: block;
             padding-bottom: 10px;
             margin-left: 10px;
+        }
+
+        @include pc{
+            flex-direction: column;
+            align-items: start;
         }
     }
 

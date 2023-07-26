@@ -25,7 +25,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 4%;
 }
@@ -35,7 +35,7 @@ img {
 }
 
 header {
-  height: 100px;
+  height: 80px;
   width: 100%;
   padding: 0 4%;
   background: #f8f8f8;
@@ -173,8 +173,7 @@ header {
 
 .gnav {
   justify-content: space-between;
-  height: 100px;
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 18px;
   align-items: end;
 }
@@ -192,7 +191,7 @@ header {
 
 .top {
   padding-left: 4%;
-  margin-top: 100px;
+  margin-top: 90px;
   position: relative;
 }
 .top__Title {
@@ -235,6 +234,11 @@ footer {
 section {
   padding-top: 100px;
 }
+@media (min-width: 769px) {
+  section {
+    display: flex;
+  }
+}
 
 .sec__title {
   font-size: 48px;
@@ -262,6 +266,12 @@ section {
   display: block;
   padding-bottom: 10px;
   margin-left: 10px;
+}
+@media (min-width: 769px) {
+  .sec__title__container {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 @media (min-width: 769px) {
   .sec__title {
