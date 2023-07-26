@@ -60,49 +60,55 @@ header {
     position: fixed;
     top: 0;
 }
+
 //gnav-------------
 .mobile-menu {
     display: block;
+
     @include pc {
         display: none;
-      }
-  }
-.desktop-menu{
+    }
+}
+
+.desktop-menu {
     display: none;
+
     @include pc {
         display: block;
-      }
+    }
 }
 
 
 //モバイル用ハンバーガーメニュー---
 
-#g-nav{
+#g-nav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-    position:fixed;
+    position: fixed;
     z-index: 999;
     /*ナビのスタート位置と形状*/
-	top:0;
+    top: 0;
     right: -120%;
-	width:100%;
-    height: 100vh;/*ナビの高さ*/
-	background:$white-color;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: $white-color;
     /*動き*/
-	transition: all 0.6s;
+    transition: all 0.6s;
 }
 
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
+#g-nav.panelactive {
     right: 0;
 }
 
 /*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
+#g-nav.panelactive #g-nav-list {
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 999; 
+    z-index: 999;
     width: 100%;
-    height: 100vh;/*表示する高さ*/
+    height: 100vh;
+    /*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -112,59 +118,60 @@ header {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*リストのレイアウト設定*/
 
-#g-nav li{
-	list-style: none;
+#g-nav li {
+    list-style: none;
     text-align: center;
 }
 
-#g-nav li a{
-	color: $black-color;
-	text-decoration: none;
-	padding:10px;
-	display: block;
-	letter-spacing: 0.1em;
-	font-weight: bold;
+#g-nav li a {
+    color: $black-color;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 /*========= ボタンのためのCSS ===============*/
-.openbtn{
-	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-	top:7%;
-	right: 4%;
+.openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 7%;
+    right: 4%;
     width: 50px;
-    height:50px;
+    height: 50px;
     cursor: pointer;
 }
-	
-/*×に変化*/	
-.openbtn span{
+
+/*×に変化*/
+.openbtn span {
     display: inline-block;
     transition: all .4s;
     position: absolute;
     left: 14px;
     height: 1px;
-	background-color: $black-color;
-  	width: 45%;
-  }
+    background-color: $black-color;
+    width: 45%;
+}
 
 .openbtn span:nth-of-type(1) {
-	top:15px;	
+    top: 15px;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:23px;
+    top: 23px;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:31px;
+    top: 31px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -175,10 +182,10 @@ header {
 }
 
 .openbtn.active span:nth-of-type(2) {
-	opacity: 0;
+    opacity: 0;
 }
 
-.openbtn.active span:nth-of-type(3){
+.openbtn.active span:nth-of-type(3) {
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
@@ -207,29 +214,32 @@ header {
         margin-left: 30px;
     }
 }
-.top{
+
+.top {
 
     margin-top: 120px;
     position: relative;
-    
-    &__Title{
+
+    &__Title {
 
         position: absolute;
         top: 0;
-    & h1 {
-        font-size: 48px;
-        margin-bottom: 15px;
-    }
 
-    & p {
-        font-size: 14px;
+        & h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
 
-        &:last-child {
-            display: inline-block;
-            margin-top: 10px;
+        & p {
+            font-size: 14px;
+
+            &:last-child {
+                display: inline-block;
+                margin-top: 10px;
+            }
         }
     }
-}}
+}
 
 
 //slider--------------------------------------
@@ -240,7 +250,7 @@ header {
     margin-left: auto;
     z-index: 100;
 
-    @include pc{
+    @include pc {
         width: 85%;
         height: 88vh;
         margin-right: auto;
@@ -293,6 +303,11 @@ section {
             padding-bottom: 10px;
             margin-left: 10px;
         }
+    }
+
+    @include pc {
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
     }
 
 }
@@ -360,37 +375,40 @@ section {
 //works---------------------
 
 .works {
-//works_nav
+
+    //works_nav
     &__list {
         font-size: 18px;
         margin-bottom: 30px;
         justify-content: center;
     }
-    &__item+&__item::before{
+
+    &__item+&__item::before {
         content: "|";
         font-size: 18px;
         margin: 0 20px;
     }
 
     //glid
-    &glid__box{
+    &glid__box {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
     }
 
-    &glid__item{
-        &figcaption{
+    &glid__item {
+        &figcaption {
             font-size: 14px;
         }
-        
+
 
     }
-    &__glid__cap{
+
+    &__glid__cap {
         font-size: 10px;
         margin-bottom: 5px;
 
-        & p::after{
+        & p::after {
             content: "|";
             font-size: 10px;
             padding-left: 10px;
@@ -398,5 +416,5 @@ section {
         }
     }
 
-    
+
 }
