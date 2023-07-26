@@ -11,6 +11,7 @@ $pc: 769px;
 
 $white-color:#f8f8f8;
 $black-color:#333;
+$accent:#7F6D35;
 //------------------------
 
 
@@ -213,6 +214,9 @@ header {
     &__item+&__item {
         margin-left: 30px;
     }
+    &__link:hover{
+        color: $accent;
+    }
 }
 
 
@@ -231,11 +235,16 @@ header {
 
         & h1 {
             font-size: 48px;
+            font-weight: normal;
             margin-bottom: 15px;
+            color: $accent;
+
         }
 
         & p {
             font-size: 14px;
+            color: $accent;
+
 
             &:last-child {
                 display: inline-block;
@@ -292,11 +301,11 @@ section {
 .sec__title {
     font-size: 48px;
     font-weight: normal;
-    
 
     & span {
         font-size: 18px;
         margin-left: 50px;
+
 
         @include pc{
             margin: 0;
@@ -331,6 +340,7 @@ section {
             flex-direction: column;
             align-items: start;
             width: 10%;
+            vertical-align:top;
         }
     }
 
