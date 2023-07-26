@@ -43,6 +43,10 @@ header {
   top: 0;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .gnav {
   justify-content: space-between;
   height: 100px;
@@ -62,23 +66,31 @@ header {
   margin-left: 30px;
 }
 
-.topImg {
-  padding-left: 4%;
-  margin-top: 150px;
-  height: 100vh;
-  background-position: left;
-  background-size: cover;
+.top {
+  margin-top: 120px;
+  position: relative;
 }
-.topImg h1 {
+.top__Title {
+  position: absolute;
+  top: 0;
+}
+.top__Title h1 {
   font-size: 48px;
   margin-bottom: 15px;
 }
-.topImg p {
+.top__Title p {
   font-size: 14px;
 }
-.topImg p:last-child {
+.top__Title p:last-child {
   display: inline-block;
   margin-top: 10px;
+}
+
+#slider {
+  width: 90%;
+  height: 100vh;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 footer {
