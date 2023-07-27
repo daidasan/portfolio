@@ -265,7 +265,7 @@ section {
   section {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 30px;
   }
 }
 
@@ -309,6 +309,7 @@ section {
     align-items: start;
     width: 10%;
     vertical-align: top;
+    margin-left: 150px;
   }
 }
 @media (min-width: 769px) {

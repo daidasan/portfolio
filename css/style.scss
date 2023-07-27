@@ -330,7 +330,8 @@ section {
     @include pc{
         display: flex;
         justify-content: space-between;
-        padding: 0;
+        padding: 30px;
+
     }
     
 }
@@ -385,6 +386,7 @@ section {
             align-items: start;
             width: 10%;
             vertical-align:top;
+            margin-left: 150px;
         }
     }
 
