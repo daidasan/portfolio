@@ -172,27 +172,35 @@ header {
   width: 30%;
 }
 
-.gnav {
-  justify-content: space-between;
-  padding-top: 20px;
-  font-size: 18px;
-  align-items: end;
+@media (min-width: 769px) {
+  header {
+    height: 100vh;
+    width: 135px;
+    padding: 0;
+    top: 0;
+    border-right: 1px solid #333;
+  }
+  .gnav {
+    flex-direction: column;
+    margin: 20px 0 0 30px;
+    font-size: 16px;
+    align-items: start;
+  }
+  .gnav__logo {
+    width: 70px;
+    height: 70px;
+    border-bottom: 1px solid #333;
+  }
+  .gnav__list {
+    margin-top: 50px;
+  }
+  .gnav__item + .gnav__item {
+    margin-top: 10px;
+  }
+  .gnav__link:hover {
+    color: #7F6D35;
+  }
 }
-.gnav__logo {
-  width: 70px;
-  height: 70px;
-  border-bottom: 1px solid #333;
-}
-.gnav__list {
-  padding-bottom: 30px;
-}
-.gnav__item + .gnav__item {
-  margin-left: 30px;
-}
-.gnav__link:hover {
-  color: #7F6D35;
-}
-
 .top {
   padding-left: 4%;
   margin-top: 90px;
@@ -217,6 +225,17 @@ header {
   display: inline-block;
   margin-top: 10px;
 }
+@media (min-width: 769px) {
+  .top__Title {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 769px) {
+  .top {
+    margin: 0;
+    margin-left: 135px;
+  }
+}
 
 #slider {
   width: 90%;
@@ -226,8 +245,8 @@ header {
 }
 @media (min-width: 769px) {
   #slider {
-    width: 92vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -246,6 +265,7 @@ section {
   section {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
