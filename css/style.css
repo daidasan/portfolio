@@ -436,17 +436,18 @@ section {
   margin-right: 10px;
 }
 
-.contact img {
-  max-width: 80%;
-  height: auto;
+.contact {
+  padding-bottom: 0;
 }
 @media (min-width: 769px) {
-  .contact div {
+  .contact__box {
     position: relative;
     width: 100%;
   }
-  .contact div footer {
-    width: 100%;
+  .contact__box footer {
+    height: 50px;
+    padding-top: 20%;
+    background-position: bottom 50px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -454,8 +455,9 @@ section {
 }
 
 footer {
+  width: 100%;
   padding-top: 40%;
-  height: 50px;
+  margin-bottom: 30px;
   text-align: center;
   background-image: url(../img/footer.jpg);
   background-position: top center;
