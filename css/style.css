@@ -430,6 +430,7 @@ section {
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-snap-type: y mandatory;
   }
   .xScroll__box {
     display: flex;
@@ -441,6 +442,7 @@ section {
     width: 100vw;
     height: 100vh;
     padding-left: 0;
+    scroll-snap-align: start;
   }
   ::-webkit-scrollbar {
     display: none;
