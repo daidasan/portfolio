@@ -52,6 +52,38 @@ img {
     display: flex;
 }
 
+//xscroll-----------------------------------
+
+@include pc{
+    .xScroll{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style:none;
+
+        &__box{
+            display: flex;
+            width: 500vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+        }
+        &__slide{
+            width: 100vw;
+            height: 100vh;
+        }
+        
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
+
 //header-------------------------------------
 header {
     height: 90px;
@@ -270,6 +302,13 @@ header {
     }
 }
 
+
+//Locomotive Scroll
+.pc__Locomotive_Scroll{
+    @include pc{
+        // display: flex;
+    }
+}
 
 
 //footer---------------------------------------

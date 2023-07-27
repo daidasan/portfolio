@@ -34,6 +34,32 @@ img {
   display: flex;
 }
 
+@media (min-width: 769px) {
+  .xScroll {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .xScroll__box {
+    display: flex;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .xScroll__slide {
+    width: 100vw;
+    height: 100vh;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
 header {
   height: 90px;
   width: 100%;

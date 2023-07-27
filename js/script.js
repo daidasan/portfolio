@@ -46,3 +46,17 @@ $('#slider').vegas({
         $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
         $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
     });
+
+
+
+	//locomotive-scroll---------------
+	var scroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true,
+		direction: 'horizontal',
+		multiplier: 1,
+		horizontalGesture: true
+	  });
+
+
+	  //---------------------------------
