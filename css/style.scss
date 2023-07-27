@@ -52,37 +52,7 @@ img {
     display: flex;
 }
 
-//xscroll-----------------------------------
 
-@include pc{
-    .xScroll{
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        position: absolute;
-        scrollbar-width: none;
-        -ms-overflow-style:none;
-
-        &__box{
-            display: flex;
-            width: 500vw;
-            transform: rotate(90deg) translateY(-100vh);
-            transform-origin: top left;
-        }
-        &__slide{
-            width: 100vw;
-            height: 100vh;
-        }
-        
-    }
-    ::-webkit-scrollbar{
-        display: none;
-    }
-    
-}
 
 //header-------------------------------------
 header {
@@ -264,6 +234,7 @@ header {
 
         position: absolute;
         top: 0px;
+        padding-left: 4%;
 
         & h1 {
             font-size: 48px;
@@ -295,8 +266,8 @@ header {
     margin-left: auto;
     
     @include pc {
-        width: 85%;
-        height: 88vh;
+        width: 92vw;
+        height: 100vh;
         margin-right: auto;
         margin-left: auto;
     }
@@ -333,7 +304,6 @@ section {
 .sec__content__box{
 
     @include pc{
-        width: 85%;
     }
 }
 
@@ -523,4 +493,38 @@ section {
     padding-bottom: 150px;
     background-size: contain;
     mix-blend-mode:multiply;
+}
+
+
+//xscroll-----------------------------------
+
+@include pc{
+    .xScroll{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style:none;
+
+        &__box{
+            display: flex;
+            width: 500vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+        }
+        &__slide{
+            width: 100vw;
+            height: 100vh;
+            padding-left: 0;
+        }
+        
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
 }

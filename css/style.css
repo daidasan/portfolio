@@ -34,32 +34,6 @@ img {
   display: flex;
 }
 
-@media (min-width: 769px) {
-  .xScroll {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .xScroll__box {
-    display: flex;
-    width: 500vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-  }
-  .xScroll__slide {
-    width: 100vw;
-    height: 100vh;
-  }
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
 header {
   height: 90px;
   width: 100%;
@@ -227,6 +201,7 @@ header {
 .top__Title {
   position: absolute;
   top: 0px;
+  padding-left: 4%;
 }
 .top__Title h1 {
   font-size: 48px;
@@ -251,8 +226,8 @@ header {
 }
 @media (min-width: 769px) {
   #slider {
-    width: 85%;
-    height: 88vh;
+    width: 92vw;
+    height: 100vh;
     margin-right: auto;
     margin-left: auto;
   }
@@ -271,12 +246,6 @@ section {
   section {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 769px) {
-  .sec__content__box {
-    width: 85%;
   }
 }
 
@@ -427,5 +396,33 @@ section {
   padding-bottom: 150px;
   background-size: contain;
   mix-blend-mode: multiply;
+}
+
+@media (min-width: 769px) {
+  .xScroll {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .xScroll__box {
+    display: flex;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .xScroll__slide {
+    width: 100vw;
+    height: 100vh;
+    padding-left: 0;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
