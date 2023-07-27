@@ -9,9 +9,10 @@ $pc: 769px;
     }
 }
 
-$white-color:#f8f8f8;
-$black-color:#333;
-$accent:#7F6D35;
+$white-color:#FFFEF2
+/* #f8f8f8 */;
+$black-color:#333132;
+$accent:#E83929/* #832F12 *//* #7F6D35 */;
 //------------------------
 
 
@@ -211,14 +212,12 @@ header {
         padding: 0;
         top: 0;
         border-right: 1px solid $black-color;
-
     }
     .gnav {
-        flex-direction: column;
         margin-left: 30px;
         font-size: 16px;
-        align-items: start;
-    
+        flex-direction: column;
+
         &__list {
             margin-top: 50px;
         }
@@ -265,8 +264,8 @@ header {
             }
         }
         @include pc{
-            margin-top: 70px;
-            margin-left: 150px;
+            margin-top: 50px;
+            margin-left: 200px;
         }
     }
 
@@ -292,16 +291,11 @@ header {
 }
 
 
-//footer---------------------------------------
 
-footer {
-    height: 50px;
-    border-top: 1px solid $black-color;
-    text-align: center;
-}
 
 //section--------------------------------------
 section {
+
     padding: 100px 4% 0 4%;
 
     @include pc{
@@ -314,6 +308,7 @@ section {
 }
 
 .sec__content__box{
+
 
     @include pc{
         // padding-right: 135px;
@@ -351,6 +346,7 @@ section {
     &__container {
         align-items: end;
         margin-bottom: 50px;
+
 
         & p {
             display: block;
@@ -503,10 +499,17 @@ section {
 
 .contact{
     background-image: url(../img/footer.jpg);
-    background-position: bottom;
-    padding-bottom: 150px;
+    background-position: bottom 50px;
     background-size: contain;
     mix-blend-mode:multiply;
+}
+
+//footer---------------------------------------
+
+footer {
+    height: 50px;
+    border-top: 1px solid $black-color;
+    text-align: center;
 }
 
 

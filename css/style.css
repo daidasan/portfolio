@@ -4,14 +4,14 @@ body {
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.1em;
-  color: #333;
-  background: #f8f8f8;
+  color: #333132;
+  background: #FFFEF2;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #333132;
 }
 
 ul,
@@ -38,7 +38,7 @@ header {
   height: 90px;
   width: 100%;
   padding: 0 4%;
-  background: #f8f8f8;
+  background: #FFFEF2;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -66,7 +66,7 @@ header {
   margin-top: 20px;
   width: 70px;
   height: 70px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333132;
 }
 
 #g-nav {
@@ -79,7 +79,7 @@ header {
   width: 100%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #f8f8f8;
+  background: #FFFEF2;
   /*動き*/
   transition: all 0.6s;
 }
@@ -118,7 +118,7 @@ header {
 }
 
 #g-nav li a {
-  color: #333;
+  color: #333132;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -145,7 +145,7 @@ header {
   position: absolute;
   left: 14px;
   height: 1px;
-  background-color: #333;
+  background-color: #333132;
   width: 45%;
 }
 
@@ -185,13 +185,12 @@ header {
     width: 135px;
     padding: 0;
     top: 0;
-    border-right: 1px solid #333;
+    border-right: 1px solid #333132;
   }
   .gnav {
-    flex-direction: column;
     margin-left: 30px;
     font-size: 16px;
-    align-items: start;
+    flex-direction: column;
   }
   .gnav__list {
     margin-top: 50px;
@@ -200,7 +199,7 @@ header {
     margin-top: 10px;
   }
   .gnav__link:hover {
-    color: #7F6D35;
+    color: #E83929;
   }
 }
 .top {
@@ -216,11 +215,11 @@ header {
   font-size: 48px;
   font-weight: normal;
   margin-bottom: 15px;
-  color: #7F6D35;
+  color: #E83929;
 }
 .top__Title p {
   font-size: 14px;
-  color: #7F6D35;
+  color: #E83929;
 }
 .top__Title p:last-child {
   display: inline-block;
@@ -228,8 +227,8 @@ header {
 }
 @media (min-width: 769px) {
   .top__Title {
-    margin-top: 70px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 200px;
   }
 }
 @media (min-width: 769px) {
@@ -251,12 +250,6 @@ header {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-footer {
-  height: 50px;
-  border-top: 1px solid #333;
-  text-align: center;
 }
 
 section {
@@ -414,10 +407,15 @@ section {
 
 .contact {
   background-image: url(../img/footer.jpg);
-  background-position: bottom;
-  padding-bottom: 150px;
+  background-position: bottom 50px;
   background-size: contain;
   mix-blend-mode: multiply;
+}
+
+footer {
+  height: 50px;
+  border-top: 1px solid #333132;
+  text-align: center;
 }
 
 @media (min-width: 769px) {
