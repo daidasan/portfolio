@@ -84,6 +84,12 @@ header {
 
 
 //モバイル用ハンバーガーメニュー---
+.gnav__logo {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    border-bottom: 1px solid $black-color;
+}
 
 #g-nav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -148,7 +154,7 @@ header {
     position: fixed;
     z-index: 9999;
     /*ボタンを最前面に*/
-    top: 7%;
+    top: 4%;
     right: 4%;
     width: 50px;
     height: 50px;
@@ -197,29 +203,7 @@ header {
 }
 
 //デスクトップ用メニュー-----
-// .gnav {
-//     justify-content: space-between;
-//     padding-top: 20px;
-//     font-size: 18px;
-//     align-items: end;
 
-//     &__logo {
-//         width: 70px;
-//         height: 70px;
-//         border-bottom: 1px solid $black-color;
-//     }
-
-//     &__list {
-//         padding-bottom: 30px;
-//     }
-
-//     &__item+&__item {
-//         margin-left: 30px;
-//     }
-//     &__link:hover{
-//         color: $accent;
-//     }
-// }
 @include pc{
     header {
         height: 100vh;
@@ -231,15 +215,9 @@ header {
     }
     .gnav {
         flex-direction: column;
-        margin: 20px 0 0 30px;
+        margin-left: 30px;
         font-size: 16px;
         align-items: start;
-    
-        &__logo {
-            width: 70px;
-            height: 70px;
-            border-bottom: 1px solid $black-color;
-        }
     
         &__list {
             margin-top: 50px;
@@ -267,7 +245,6 @@ header {
 
         position: absolute;
         top: 0px;
-        padding-left: 4%;
 
         & h1 {
             font-size: 48px;
@@ -289,12 +266,12 @@ header {
         }
         @include pc{
             margin-top: 70px;
+            margin-left: 150px;
         }
     }
 
     @include pc{
         margin: 0;
-        margin-left: 135px;
     }
 }
 
@@ -325,7 +302,7 @@ footer {
 
 //section--------------------------------------
 section {
-    padding-top: 100px;
+    padding: 100px 4% 0 4%;
 
     @include pc{
         display: flex;
@@ -547,6 +524,7 @@ section {
         scrollbar-width: none;
         -ms-overflow-style:none;
         scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
 
 
         &__box{
