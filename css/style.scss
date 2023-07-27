@@ -55,6 +55,44 @@ img {
 
 
 
+//xscroll-----------------------------------
+
+@include pc{
+    .xScroll{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        scrollbar-width: none;
+        -ms-overflow-style:none;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+
+
+        &__box{
+            display: flex;
+            width: 500vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+        }
+        &__slide{
+            width: 100vw;
+            height: 100vh;
+            padding-left: 0;
+            scroll-snap-align: start;
+        }
+        
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
+
+
 //header-------------------------------------
 header {
     height: 90px;
@@ -265,11 +303,12 @@ header {
         }
         @include pc{
             margin-top: 50px;
-            margin-left: 200px;
+            padding-left: 200px;
         }
     }
 
     @include pc{
+        padding: 0;
         margin: 0;
     }
 }
@@ -307,13 +346,6 @@ section {
     
 }
 
-.sec__content__box{
-
-
-    @include pc{
-        // padding-right: 135px;
-    }
-}
 
 .sec__title {
     font-size: 48px;
@@ -497,55 +529,39 @@ section {
 
 //contact
 
-.contact{
-    background-image: url(../img/footer.jpg);
-    background-position: bottom 50px;
-    background-size: contain;
-    mix-blend-mode:multiply;
+.contact{  
+    & img{
+        max-width: 80%;
+        height: auto;
+    }
+
+    @include pc{
+        & div{
+            position: relative;
+            width: 100%;
+
+
+            & footer{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
 }
 
 //footer---------------------------------------
 
 footer {
+    padding-top: 40%;
     height: 50px;
-    border-top: 1px solid $black-color;
+    // border-top: 1px solid $black-color;
     text-align: center;
+    background-image: url(../img/footer.jpg);
+    background-position: top center;
+    background-size: contain;
+    mix-blend-mode:multiply;
 }
 
 
-//xscroll-----------------------------------
-
-@include pc{
-    .xScroll{
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        position: absolute;
-        scrollbar-width: none;
-        -ms-overflow-style:none;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-
-
-        &__box{
-            display: flex;
-            width: 500vw;
-            transform: rotate(90deg) translateY(-100vh);
-            transform-origin: top left;
-        }
-        &__slide{
-            width: 100vw;
-            height: 100vh;
-            padding-left: 0;
-            scroll-snap-align: start;
-        }
-        
-    }
-    ::-webkit-scrollbar{
-        display: none;
-    }
-    
-}
