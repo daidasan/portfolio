@@ -341,8 +341,7 @@ section {
 }
 @media (min-width: 769px) {
   .sec__title__container p {
-    vertical-align: 8px;
-    margin-top: 10px;
+    margin: 10px 0 0 15px;
   }
 }
 @media (min-width: 769px) {
