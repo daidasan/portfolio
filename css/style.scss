@@ -348,15 +348,16 @@ section {
 
 
 .sec__title {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: normal;
 
     & span {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 50px;
 
 
         @include pc{
+            font-size: 18px;
             margin: 50px 0 0 0;
             vertical-align: -8px;
         }
@@ -411,6 +412,8 @@ section {
     @include pc {
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
+        font-size: 48px;
+
     }
 
 }
@@ -445,6 +448,10 @@ section {
 .about__me {
     margin-bottom: 30px;
 
+    & p{
+        font-size: 14px;
+    }
+
     @include pc{
         width: 45%;
     }
@@ -460,19 +467,19 @@ section {
 
     & dt {
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     & dd {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     & time {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     & span {
-        font-size: 10px;
+        font-size: 14px;
 
         &::before {
             content: "/at";
@@ -526,7 +533,7 @@ section {
     }
 
     &__glid__cap {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 5px;
 
         & p::after {
