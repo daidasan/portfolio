@@ -432,6 +432,7 @@ section {
   font-size: 18px;
   margin-bottom: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .works__item + .works__item::before {
   content: "|";
