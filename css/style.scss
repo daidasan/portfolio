@@ -586,6 +586,10 @@ footer {
     background-position: top center;
     background-size: contain;
     mix-blend-mode:multiply;
+
+    & small{
+        font-size: 11px;
+    }
 }
 
 
