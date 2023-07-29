@@ -246,22 +246,26 @@ header {
 @include pc{
     header {
         height: 100vh;
-        width: 135px;
+        width: 150px;
         padding: 0;
         top: 0;
         border-right: 1px solid $black-color;
     }
     .gnav {
-        margin-left: 30px;
+        // margin-left: 30px;
         font-size: 16px;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
 
         &__list {
-            margin-top: 50px;
+            // margin-top: 50px;
+            margin-bottom: 30px;
         }
     
         &__item+&__item {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         &__link:hover{
             color: $accent;
