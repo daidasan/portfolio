@@ -407,13 +407,13 @@ section {
 }
 @media (min-width: 769px) {
   .about__me {
-    width: 45%;
+    width: 40%;
   }
 }
 
 @media (min-width: 769px) {
   .about__event {
-    width: 45%;
+    width: 53%;
   }
 }
 
@@ -433,7 +433,7 @@ section {
   font-size: 12px;
 }
 .about__event__item span {
-  font-size: 14px;
+  font-size: 12px;
 }
 .about__event__item span::before {
   content: "| at";
@@ -450,8 +450,8 @@ section {
   font-size: 14px;
 }
 
-.works sec__content__box {
-  width: 100%;
+.works .sec__content__box {
+  width: 90%;
 }
 .works__list {
   font-size: 18px;
@@ -464,10 +464,10 @@ section {
   font-size: 18px;
   margin: 0 20px;
 }
-.worksglid__box {
+.works__glid__box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 30px;
 }
 .worksglid__itemfigcaption {
   font-size: 14px;

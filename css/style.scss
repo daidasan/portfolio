@@ -489,14 +489,14 @@ section {
     }
 
     @include pc {
-        width: 45%;
+        width: 40%;
     }
 }
 
 .about__event {
 
     @include pc {
-        width: 45%;
+        width: 53%;
     }
 }
 
@@ -519,7 +519,7 @@ section {
     }
 
     & span {
-        font-size: 14px;
+        font-size: 12px;
 
         &::before {
             content: "| at";
@@ -545,9 +545,9 @@ section {
 //works---------------------
 
 .works {
-    
-    & sec__content__box{
-        width: 100%; 
+
+    & .sec__content__box {
+        width: 90%;
     }
 
     //works_nav
@@ -565,10 +565,11 @@ section {
     }
 
     //glid
-    &glid__box {
+    &__glid__box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 40px;
+        gap: 30px;
+
     }
 
     &glid__item {
