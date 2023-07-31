@@ -5,7 +5,7 @@ body {
   font-style: normal;
   letter-spacing: 0.1em;
   color: #333132;
-  background: #FFFEF2;
+  background: #FFFBF4;
   line-height: 1.5;
 }
 
@@ -68,7 +68,7 @@ header {
   height: 90px;
   width: 100%;
   padding: 0 4%;
-  background: #FFFEF2;
+  background: #FFFBF4;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -109,7 +109,7 @@ header {
   width: 100%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #FFFEF2;
+  background: #FFFBF4;
   /*動き*/
   transition: all 0.6s;
 }
@@ -212,21 +212,23 @@ header {
 @media (min-width: 769px) {
   header {
     height: 100vh;
-    width: 135px;
+    width: 150px;
     padding: 0;
     top: 0;
     border-right: 1px solid #333132;
   }
   .gnav {
-    margin-left: 30px;
     font-size: 16px;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
   }
   .gnav__list {
-    margin-top: 50px;
+    margin-bottom: 30px;
   }
   .gnav__item + .gnav__item {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .gnav__link:hover {
     color: #E83929;
@@ -237,23 +239,15 @@ header {
   margin-top: 90px;
   position: relative;
 }
+@media (min-width: 769px) {
+  .top {
+    padding: 0;
+    margin: 0;
+  }
+}
 .top__Title {
   position: absolute;
-  top: 0px;
-}
-.top__Title h1 {
-  font-size: 48px;
-  font-weight: normal;
-  margin-bottom: 15px;
-  color: #E83929;
-}
-.top__Title p {
-  font-size: 14px;
-  color: #E83929;
-}
-.top__Title p:last-child {
-  display: inline-block;
-  margin-top: 10px;
+  top: 8%;
 }
 @media (min-width: 769px) {
   .top__Title {
@@ -261,11 +255,29 @@ header {
     padding-left: 200px;
   }
 }
+.top__Title h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #E83929;
+}
 @media (min-width: 769px) {
-  .top {
-    padding: 0;
-    margin: 0;
+  .top__Title h1 {
+    font-size: 52px;
   }
+}
+.top__Title p {
+  font-size: 14px;
+  color: #E83929;
+}
+@media (min-width: 769px) {
+  .top__Title p {
+    font-size: 18px;
+  }
+}
+.top__Title p:last-child {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 #slider {
@@ -298,6 +310,13 @@ section {
   font-size: 40px;
   font-weight: normal;
 }
+@media (min-width: 769px) {
+  .sec__title {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.2em;
+    font-size: 52px;
+  }
+}
 .sec__title span {
   font-size: 16px;
   margin-left: 50px;
@@ -307,6 +326,9 @@ section {
     font-size: 18px;
     margin: 50px 0 0 0;
     vertical-align: -8px;
+    letter-spacing: 0.15em;
+    padding-left: 5px;
+    border-left: 2px solid #E83929;
   }
 }
 .sec__title::before {
@@ -335,6 +357,16 @@ section {
   align-items: end;
   margin-bottom: 50px;
 }
+@media (min-width: 769px) {
+  .sec__title__container {
+    flex-direction: column;
+    align-items: start;
+    width: 10%;
+    vertical-align: top;
+    margin-left: 180px;
+    margin-right: 50px;
+  }
+}
 .sec__title__container p {
   display: block;
   padding-bottom: 10px;
@@ -343,21 +375,6 @@ section {
 @media (min-width: 769px) {
   .sec__title__container p {
     margin: 10px 0 0 15px;
-  }
-}
-@media (min-width: 769px) {
-  .sec__title__container {
-    flex-direction: column;
-    align-items: start;
-    width: 10%;
-    vertical-align: top;
-    margin-left: 150px;
-  }
-}
-@media (min-width: 769px) {
-  .sec__title {
-    writing-mode: vertical-rl;
-    font-size: 48px;
   }
 }
 

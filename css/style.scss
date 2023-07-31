@@ -9,10 +9,10 @@ $pc: 769px;
     }
 }
 
-$white-color:#FFFEF2
+$white-color:#FFFBF4
 /* #f8f8f8 */;
 $black-color:#333132;
-$accent:#E83929/* #832F12 *//* #7F6D35 */;
+$accent:/* #783438 */#E83929/* #832F12 *//* #7F6D35 */;
 //------------------------
 
 
@@ -252,16 +252,20 @@ header {
         border-right: 1px solid $black-color;
     }
     .gnav {
-        margin-left: 30px;
+        // margin-left: 30px;
         font-size: 16px;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
 
         &__list {
-            margin-top: 50px;
+            // margin-top: 50px;
+            margin-bottom: 30px;
         }
     
         &__item+&__item {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         &__link:hover{
             color: $accent;
@@ -278,10 +282,20 @@ header {
     margin-top: 90px;
     position: relative;
 
+    @include pc{
+        padding: 0;
+        margin: 0;
+    }
+
     &__Title {
 
         position: absolute;
-        top: 0px;
+        top: 8%;
+
+        @include pc{
+            margin-top: 50px;
+            padding-left: 200px;
+        }
 
         & h1 {
             font-size: 48px;
@@ -299,22 +313,22 @@ header {
             font-size: 14px;
             color: $accent;
 
+            @include pc{
+                font-size: 18px;
+            }
 
             &:last-child {
                 display: inline-block;
                 margin-top: 10px;
+
+
             }
-        }
-        @include pc{
-            margin-top: 50px;
-            padding-left: 200px;
+
+
         }
     }
 
-    @include pc{
-        padding: 0;
-        margin: 0;
-    }
+
 }
 
 
@@ -354,16 +368,30 @@ section {
 .sec__title {
     font-size: 40px;
     font-weight: normal;
+    // color: $accent;
+
+    @include pc {
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 0.2em;
+        font-size: 52px;
+
+    }
 
     & span {
         font-size: 16px;
         margin-left: 50px;
+        // color: $black-color;
 
 
         @include pc{
             font-size: 18px;
             margin: 50px 0 0 0;
             vertical-align: -8px;
+            letter-spacing: 0.15em;
+            padding-left: 5px;
+            border-left: 2px solid $accent;
+
         }
     }
 
@@ -371,6 +399,7 @@ section {
         content: "【";
         font-size: 32px;
         padding-right: 10px;
+        // color: $black-color;
 
         @include pc{
             vertical-align: -8px;
@@ -382,6 +411,7 @@ section {
         content: "】";
         font-size: 32px;
         padding-left: 10px;
+        // color: $black-color;
 
         @include pc{
             vertical-align: -8px;
@@ -393,6 +423,14 @@ section {
         align-items: end;
         margin-bottom: 50px;
 
+        @include pc{
+            flex-direction: column;
+            align-items: start;
+            width: 10%;
+            vertical-align:top;
+            margin-left: 180px;
+            margin-right: 50px;
+        }
 
         & p {
             display: block;
@@ -403,21 +441,6 @@ section {
                 margin: 10px 0 0 15px;
             }
         }
-
-        @include pc{
-            flex-direction: column;
-            align-items: start;
-            width: 10%;
-            vertical-align:top;
-            margin-left: 150px;
-        }
-    }
-
-    @include pc {
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-        font-size: 48px;
-
     }
 
 }
