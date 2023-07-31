@@ -10,9 +10,15 @@ $pc: 769px;
 }
 
 $white-color:#FFFBF4
-/* #f8f8f8 */;
+/* #f8f8f8 */
+;
 $black-color:#333132;
-$accent:/* #783438 */#E83929/* #832F12 *//* #7F6D35 */;
+$accent:
+/* #783438 */
+#E83929
+/* #832F12 */
+/* #7F6D35 */
+;
 //------------------------
 
 
@@ -57,8 +63,8 @@ img {
 
 //xscroll-----------------------------------
 
-@include pc{
-    .xScroll{
+@include pc {
+    .xScroll {
         width: 100vh;
         height: 100vw;
         transform: rotate(-90deg) translateX(-100vh);
@@ -67,29 +73,31 @@ img {
         overflow-y: scroll;
         position: absolute;
         scrollbar-width: none;
-        -ms-overflow-style:none;
+        -ms-overflow-style: none;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
 
 
-        &__box{
+        &__box {
             display: flex;
             width: 500vw;
             transform: rotate(90deg) translateY(-100vh);
             transform-origin: top left;
         }
-        &__slide{
+
+        &__slide {
             width: 100vw;
             height: 100vh;
             padding-left: 0;
             scroll-snap-align: start;
         }
-        
+
     }
-    ::-webkit-scrollbar{
+
+    ::-webkit-scrollbar {
         display: none;
     }
-    
+
 }
 
 
@@ -243,7 +251,7 @@ header {
 
 //デスクトップ用メニュー-----
 
-@include pc{
+@include pc {
     header {
         height: 100vh;
         width: 150px;
@@ -251,6 +259,7 @@ header {
         top: 0;
         border-right: 1px solid $black-color;
     }
+
     .gnav {
         // margin-left: 30px;
         font-size: 16px;
@@ -263,11 +272,12 @@ header {
             // margin-top: 50px;
             margin-bottom: 30px;
         }
-    
+
         &__item+&__item {
             margin-top: 15px;
         }
-        &__link:hover{
+
+        &__link:hover {
             color: $accent;
         }
     }
@@ -282,7 +292,7 @@ header {
     margin-top: 90px;
     position: relative;
 
-    @include pc{
+    @include pc {
         padding: 0;
         margin: 0;
     }
@@ -292,7 +302,7 @@ header {
         position: absolute;
         top: 8%;
 
-        @include pc{
+        @include pc {
             margin-top: 50px;
             padding-left: 200px;
         }
@@ -303,7 +313,7 @@ header {
             margin-bottom: 15px;
             color: $accent;
 
-            @include pc{
+            @include pc {
                 font-size: 52px;
             }
 
@@ -313,7 +323,7 @@ header {
             font-size: 14px;
             color: $accent;
 
-            @include pc{
+            @include pc {
                 font-size: 18px;
             }
 
@@ -338,7 +348,7 @@ header {
     height: 88vh;
     margin-right: 0;
     margin-left: auto;
-    
+
     @include pc {
         width: 100%;
         height: 100%;
@@ -355,13 +365,13 @@ section {
 
     padding: 100px 4% 0 4%;
 
-    @include pc{
+    @include pc {
         display: flex;
         justify-content: space-between;
         padding: 30px 50px;
 
     }
-    
+
 }
 
 
@@ -384,14 +394,13 @@ section {
         // color: $black-color;
 
 
-        @include pc{
+        @include pc {
             font-size: 18px;
             margin: 50px 0 0 0;
             vertical-align: -8px;
             letter-spacing: 0.15em;
             padding-left: 5px;
-            border-left: 2px solid $accent;
-
+            // border-left: 2px solid $accent;
         }
     }
 
@@ -401,7 +410,7 @@ section {
         padding-right: 10px;
         // color: $black-color;
 
-        @include pc{
+        @include pc {
             vertical-align: -8px;
             margin-bottom: 10px;
         }
@@ -413,7 +422,7 @@ section {
         padding-left: 10px;
         // color: $black-color;
 
-        @include pc{
+        @include pc {
             vertical-align: -8px;
             margin-top: 10px;
         }
@@ -423,11 +432,11 @@ section {
         align-items: end;
         margin-bottom: 50px;
 
-        @include pc{
+        @include pc {
             flex-direction: column;
             align-items: start;
             width: 10%;
-            vertical-align:top;
+            vertical-align: top;
             margin-left: 180px;
             margin-right: 50px;
         }
@@ -437,7 +446,7 @@ section {
             padding-bottom: 10px;
             margin-left: 10px;
 
-            @include pc{
+            @include pc {
                 margin: 10px 0 0 15px;
             }
         }
@@ -464,9 +473,9 @@ section {
 
 
 //about----------------------------------
-.about .sec__content__box{
-    
-    @include pc{
+.about .sec__content__box {
+
+    @include pc {
         display: flex;
         justify-content: space-between;
     }
@@ -475,23 +484,24 @@ section {
 .about__me {
     margin-bottom: 30px;
 
-    & p{
+    & p {
         font-size: 14px;
     }
 
-    @include pc{
+    @include pc {
         width: 45%;
     }
 }
 
-.about__event{
+.about__event {
 
-    @include pc{
+    @include pc {
         width: 45%;
     }
 }
+
 .about__event__item {
-    @include pc{
+    @include pc {
         margin-bottom: 10px;
     }
 
@@ -580,16 +590,16 @@ section {
 
 //contact
 
-.contact{  
+.contact {
     padding-bottom: 0;
 
-    @include pc{
+    @include pc {
 
-        &__box{
+        &__box {
             position: relative;
-            width:100%;
+            width: 100%;
 
-            & footer{
+            & footer {
                 height: 50px;
                 padding-top: 20%;
                 background-position: bottom 50px;
@@ -598,7 +608,7 @@ section {
                 bottom: 0;
                 right: 0;
             }
-    }
+        }
 
     }
 }
@@ -615,11 +625,9 @@ footer {
     background-image: url(../img/footer.jpg);
     background-position: top center;
     background-size: contain;
-    mix-blend-mode:multiply;
+    mix-blend-mode: multiply;
 
-    & small{
+    & small {
         font-size: 11px;
     }
 }
-
-
