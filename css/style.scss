@@ -246,7 +246,7 @@ header {
 @include pc{
     header {
         height: 100vh;
-        width: 135px;
+        width: 150px;
         padding: 0;
         top: 0;
         border-right: 1px solid $black-color;
@@ -288,6 +288,10 @@ header {
             font-weight: normal;
             margin-bottom: 15px;
             color: $accent;
+
+            @include pc{
+                font-size: 52px;
+            }
 
         }
 
