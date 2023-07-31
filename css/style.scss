@@ -358,7 +358,7 @@ section {
     @include pc{
         display: flex;
         justify-content: space-between;
-        padding: 30px;
+        padding: 30px 50px;
 
     }
     
@@ -491,9 +491,12 @@ section {
     }
 }
 .about__event__item {
+    @include pc{
+        margin-bottom: 10px;
+    }
 
     & dt {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-size: 16px;
     }
 
