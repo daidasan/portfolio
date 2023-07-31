@@ -436,19 +436,23 @@ section {
   font-size: 14px;
 }
 .about__event__item span::before {
-  content: "/at";
-  font-size: 10px;
-  padding-right: 10px;
-  margin-left: 5px;
+  content: "| at";
+  padding-right: 5px;
+  margin-left: 10px;
 }
 
 .skill__container {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 .skill__container dl dd {
   font-size: 14px;
 }
 
+.works sec__content__box {
+  width: 100%;
+}
 .works__list {
   font-size: 18px;
   margin-bottom: 30px;

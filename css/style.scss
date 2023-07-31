@@ -522,10 +522,9 @@ section {
         font-size: 14px;
 
         &::before {
-            content: "/at";
-            font-size: 10px;
-            padding-right: 10px;
-            margin-left: 5px;
+            content: "| at";
+            padding-right: 5px;
+            margin-left: 10px;
         }
     }
 }
@@ -534,6 +533,9 @@ section {
 
 .skill__container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+
 
     & dl dd {
         font-size: 14px;
@@ -543,6 +545,10 @@ section {
 //works---------------------
 
 .works {
+    
+    & sec__content__box{
+        width: 100%; 
+    }
 
     //works_nav
     &__list {
