@@ -35,7 +35,7 @@ img {
 }
 
 header {
-  height: 90px;
+  height: 80px;
   width: 100%;
   padding: 0 4%;
   background: #FAF9F6;
@@ -63,9 +63,9 @@ header {
 }
 
 .gnav__logo {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 70px;
-  height: 70px;
+  height: 65px;
   border-bottom: 1px solid #333132;
 }
 
@@ -131,9 +131,9 @@ header {
   position: fixed;
   z-index: 9999;
   /*ボタンを最前面に*/
-  top: 4%;
-  right: 4%;
-  width: 50px;
+  top: 20px;
+  right: 0;
+  width: 70px;
   height: 50px;
   cursor: pointer;
 }
@@ -154,10 +154,6 @@ header {
 }
 
 .openbtn span:nth-of-type(2) {
-  top: 23px;
-}
-
-.openbtn span:nth-of-type(3) {
   top: 31px;
 }
 
@@ -169,10 +165,6 @@ header {
 }
 
 .openbtn.active span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.openbtn.active span:nth-of-type(3) {
   top: 30px;
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
@@ -202,7 +194,7 @@ header {
 }
 .top {
   padding-left: 4%;
-  margin-top: 90px;
+  margin-top: 80px;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -221,8 +213,6 @@ header {
 @media (min-width: 769px) {
   .top #slider {
     width: 70%;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 .top__Title {
@@ -231,8 +221,7 @@ header {
 }
 @media (min-width: 769px) {
   .top__Title {
-    margin-top: 50px;
-    padding-left: 200px;
+    padding-left: 4%;
   }
 }
 .top__Title h1 {

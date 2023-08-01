@@ -103,14 +103,14 @@ img {
 
 //header-------------------------------------
 header {
-    height: 90px;
+    height: 80px;
     width: 100%;
     padding: 0 4%;
     background: $white-color;
     position: fixed;
     top: 0;
     z-index: 999;
-}
+    }
 
 //gnav-------------
 .mobile-menu {
@@ -132,9 +132,9 @@ header {
 
 //モバイル用ハンバーガーメニュー---
 .gnav__logo {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 70px;
-    height: 70px;
+    height: 65px;
     border-bottom: 1px solid $black-color;
 }
 
@@ -201,9 +201,9 @@ header {
     position: fixed;
     z-index: 9999;
     /*ボタンを最前面に*/
-    top: 4%;
-    right: 4%;
-    width: 50px;
+    top: 20px;
+    right: 0;
+    width: 70px;
     height: 50px;
     cursor: pointer;
 }
@@ -218,31 +218,19 @@ header {
     background-color: $black-color;
     width: 45%;
 }
-
 .openbtn span:nth-of-type(1) {
     top: 15px;
 }
-
 .openbtn span:nth-of-type(2) {
-    top: 23px;
-}
-
-.openbtn span:nth-of-type(3) {
     top: 31px;
 }
-
 .openbtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
 }
-
 .openbtn.active span:nth-of-type(2) {
-    opacity: 0;
-}
-
-.openbtn.active span:nth-of-type(3) {
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
@@ -290,7 +278,7 @@ header {
 
 .top {
     padding-left: 4%;
-    margin-top: 90px;
+    margin-top: 80px;
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -308,8 +296,8 @@ header {
         @include pc {
             width: 70%;
             // height: 100%;
-            margin-right: auto;
-            margin-left: auto;
+            // margin-right: auto;
+            // margin-left: auto;
         }
     }
 
@@ -319,8 +307,8 @@ header {
         top: 8%;
 
         @include pc {
-            margin-top: 50px;
-            padding-left: 200px;
+            // margin-top: 50px;
+            padding-left: 4%;
         }
 
         & h1 {
