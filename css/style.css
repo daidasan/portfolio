@@ -1,12 +1,17 @@
 @charset "UTF-8";
 body {
-  font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
-  font-weight: 300;
+  font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.1em;
   color: #333132;
   background: #f8f8f8;
   line-height: 1.5;
+  letter-spacing: 0.15em;
+}
+
+p,
+dd {
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -63,10 +68,13 @@ header {
 }
 
 .gnav__logo {
-  margin-top: 15px;
-  width: 70px;
+  margin-top: 20px;
+  width: 65px;
   height: 65px;
-  border-bottom: 1px solid #333132;
+}
+.gnav__logo img {
+  width: 65px;
+  height: auto;
 }
 
 #g-nav {
@@ -194,7 +202,7 @@ header {
 }
 .top {
   padding-left: 4%;
-  margin-top: 80px;
+  margin: 80px 0 50px 0;
   width: 100vw;
   position: relative;
 }
@@ -251,20 +259,23 @@ header {
 section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 4% 0 4%;
+  padding: 100px 4%;
 }
+
 .sec__title {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: normal;
+  letter-spacing: 0.17em;
 }
 @media (min-width: 769px) {
   .sec__title {
-    font-size: 52px;
+    font-size: 40px;
   }
 }
 .sec__title span {
   font-size: 16px;
-  margin-left: 50px;
+  margin-left: 30px;
+  letter-spacing: 0.1em;
 }
 .sec__title::before {
   content: "【";
@@ -278,6 +289,7 @@ section {
 }
 .sec__title__container {
   align-items: end;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .sec__title__container p {
@@ -285,10 +297,12 @@ section {
   padding-bottom: 10px;
   margin-left: 10px;
 }
+
 .content__title {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: normal;
+  text-align: center;
 }
 .content__title span {
   font-size: 14px;
@@ -300,36 +314,13 @@ section {
   margin-left: 5px;
 }
 
-@media (min-width: 769px) {
-  .about .sec__content__box {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .about__me {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .about__me p {
   font-size: 14px;
 }
-@media (min-width: 769px) {
-  .about__me {
-    width: 40%;
-  }
-}
 
-@media (min-width: 769px) {
-  .about__event {
-    width: 53%;
-  }
-}
-
-@media (min-width: 769px) {
-  .about__event__item {
-    margin-bottom: 10px;
-  }
-}
 .about__event__item dt {
   margin-bottom: 5px;
   font-size: 16px;
