@@ -5,7 +5,7 @@ body {
   font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3e3b35;
+  color: #180614;
   background: #fdfcf9;
   line-height: 1.5;
   letter-spacing: 0.07em;
@@ -13,7 +13,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #3e3b35;
+  color: #180614;
+}
+
+p, dd {
+  line-height: 1.75em;
 }
 
 ul,
@@ -123,7 +127,7 @@ header {
 }
 
 #g-nav li a {
-  color: #3e3b35;
+  color: #180614;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -150,7 +154,7 @@ header {
   position: absolute;
   left: 14px;
   height: 1px;
-  background-color: #3e3b35;
+  background-color: #180614;
   width: 45%;
 }
 
@@ -186,7 +190,7 @@ header {
     background-color: transparent;
   }
   .gnav {
-    font-size: 18px;
+    font-size: 16px;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
@@ -267,13 +271,13 @@ header {
 }
 
 section {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 100px 4%;
 }
 @media (min-width: 769px) {
   section {
-    padding-left: 180px;
+    padding-left: 190px;
   }
 }
 
@@ -315,22 +319,38 @@ section {
 
 .content__title {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-weight: normal;
   text-align: center;
 }
 .content__title span {
   font-size: 14px;
-}
-.content__title span::before {
-  content: "/";
-  font-size: 24px;
-  padding-right: 10px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .about__me {
   margin-bottom: 100px;
+}
+@media (min-width: 769px) {
+  .about__me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.about__me__imgBox {
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .about__me__imgBox {
+    width: 45%;
+  }
+}
+@media (min-width: 769px) {
+  .about__me__txtBox {
+    width: 45%;
+  }
 }
 .about__me p {
   font-size: 14px;
@@ -364,9 +384,6 @@ section {
   font-size: 14px;
 }
 
-.works .sec__content__box {
-  width: 90%;
-}
 .works__list {
   font-size: 18px;
   margin-bottom: 30px;
@@ -387,6 +404,9 @@ section {
   .works__glid__box {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+}
+.worksglid__item {
+  margin: 0;
 }
 .worksglid__itemfigcaption {
   font-size: 14px;

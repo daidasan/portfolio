@@ -15,7 +15,7 @@ $white-color:#fdfcf9;
 ;
 $black-color:
 /* #333132 */
-#3e3b35;
+#180614;
 $accent:#C9171E
 /* #783438 */
 /* #E83929 */
@@ -42,6 +42,9 @@ body {
 a {
     text-decoration: none;
     color: $black-color;
+}
+p,dd{
+    line-height: 1.75em;
 }
 
 ul,
@@ -221,7 +224,7 @@ header {
     }
 
     .gnav {
-        font-size: 18px;
+        font-size: 16px;
         justify-content: space-between;
         align-items: start;
         flex-direction: column;
@@ -319,12 +322,12 @@ header {
 
 //section--------------------------------------
 section {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 4%;
 
-    @include pc{
-        padding-left: 180px;
+    @include pc {
+        padding-left: 190px;
     }
 }
 
@@ -372,19 +375,20 @@ section {
 
 .content__title {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-weight: normal;
     text-align: center;
 
     & span {
         font-size: 14px;
+        margin-left: 20px;
 
-        &::before {
-            content: "/";
-            font-size: 24px;
-            padding-right: 10px;
-            margin-left: 5px;
-        }
+        // &::before {
+        //     content: "/";
+        //     font-size: 24px;
+        //     padding-right: 10px;
+        //     margin-left: 5px;
+        // }
     }
 }
 
@@ -392,6 +396,26 @@ section {
 //about----------------------------------
 .about__me {
     margin-bottom: 100px;
+
+    @include pc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__imgBox{
+        margin-bottom: 30px;
+        text-align: center;
+        @include pc{
+            width: 45%;
+        }
+    }
+
+    &__txtBox{
+        @include pc{
+            width: 45%;
+        }
+    }
 
     & p {
         font-size: 14px;
@@ -442,9 +466,9 @@ section {
 
 .works {
 
-    & .sec__content__box {
-        width: 90%;
-    }
+    // & .sec__content__box {
+    //     width: 90%;
+    // }
 
     //works_nav
     &__list {
@@ -474,6 +498,8 @@ section {
     }
 
     &glid__item {
+        margin: 0;
+
         &figcaption {
             font-size: 14px;
         }
