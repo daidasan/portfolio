@@ -104,6 +104,10 @@ header {
     width: 65px;
     height: 65px;
 
+    @include pc{
+        margin-top: 0;
+    }
+
     & img {
         width: 65px;
         height: auto;
@@ -228,11 +232,10 @@ header {
     .gnav {
         font-size: 16px;
         justify-content: space-between;
-        align-items:start;
+        align-items:center;
         flex-direction: column;
         height: 100vh;
-        padding-left: 15%;
-        padding-bottom: 50px;
+        padding: 15% 15%;
         letter-spacing: 0.1em;
 
 
@@ -289,8 +292,11 @@ header {
         z-index: 999;
 
         @include pc {
-            padding-left: 4%;
-            top: 18%;
+            // padding-left: 4%;
+            top: 120px;
+            line-height: 1.2;
+            text-align: center;
+
         }
 
         & h1 {
@@ -298,9 +304,10 @@ header {
             font-weight: normal;
             margin-bottom: 15px;
             color: $accent;
+            letter-spacing: 0.1em;
 
             @include pc {
-                font-size: 70px;
+                font-size: 38px;
             }
 
         }
@@ -308,16 +315,17 @@ header {
         & p {
             font-size: 14px;
             color: $accent;
+            font-style: italic;
 
             @include pc {
-                font-size: 18px;
+                // font-size: 16px;
+                line-height: 1.75;
+
             }
 
             &:last-child {
                 display: inline-block;
                 margin-top: 10px;
-
-
             }
         }
     }

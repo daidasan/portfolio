@@ -74,6 +74,11 @@ header {
   width: 65px;
   height: 65px;
 }
+@media (min-width: 769px) {
+  .gnav__logo {
+    margin-top: 0;
+  }
+}
 .gnav__logo img {
   width: 65px;
   height: auto;
@@ -193,11 +198,10 @@ header {
   .gnav {
     font-size: 16px;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
-    padding-left: 15%;
-    padding-bottom: 50px;
+    padding: 15% 15%;
     letter-spacing: 0.1em;
   }
   .gnav__list {
@@ -244,8 +248,9 @@ header {
 }
 @media (min-width: 769px) {
   .top__Title {
-    padding-left: 4%;
-    top: 18%;
+    top: 120px;
+    line-height: 1.2;
+    text-align: center;
   }
 }
 .top__Title h1 {
@@ -253,19 +258,21 @@ header {
   font-weight: normal;
   margin-bottom: 15px;
   color: #C9171E;
+  letter-spacing: 0.1em;
 }
 @media (min-width: 769px) {
   .top__Title h1 {
-    font-size: 70px;
+    font-size: 38px;
   }
 }
 .top__Title p {
   font-size: 14px;
   color: #C9171E;
+  font-style: italic;
 }
 @media (min-width: 769px) {
   .top__Title p {
-    font-size: 18px;
+    line-height: 1.75;
   }
 }
 .top__Title p:last-child {
