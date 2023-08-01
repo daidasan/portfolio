@@ -183,12 +183,12 @@ header {
 
 @media (min-width: 769px) {
   header {
-    margin-left: 4%;
     padding: 0;
     top: 0;
-    width: 150px;
+    width: 20%;
     height: 100vh;
     background-color: transparent;
+    border-right: 1px solid #C9171E;
   }
   .gnav {
     font-size: 16px;
@@ -196,6 +196,7 @@ header {
     align-items: start;
     flex-direction: column;
     height: 100vh;
+    padding-left: 15%;
     padding-bottom: 50px;
     letter-spacing: 0.1em;
   }
@@ -232,13 +233,14 @@ header {
 }
 @media (min-width: 769px) {
   .top #slider {
-    width: 75%;
+    width: 80%;
     height: 100vh;
   }
 }
 .top__Title {
   position: absolute;
   top: 8%;
+  z-index: 999;
 }
 @media (min-width: 769px) {
   .top__Title {
@@ -272,13 +274,15 @@ header {
 }
 
 section {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 100px 4%;
 }
 @media (min-width: 769px) {
   section {
-    padding-left: 190px;
+    max-width: 80%;
+    margin: 0 auto 0 20%;
+    padding-right: 13%;
+    padding-left: 7%;
   }
 }
 

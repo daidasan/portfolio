@@ -217,20 +217,21 @@ header {
 
 @include pc {
     header {
-        margin-left: 4%;
         padding: 0;
         top: 0;
-        width: 150px;
+        width: 20%;
         height: 100vh;
         background-color: transparent;
+        border-right: 1px solid $accent;
     }
 
     .gnav {
         font-size: 16px;
         justify-content: space-between;
-        align-items: start;
+        align-items:start;
         flex-direction: column;
         height: 100vh;
+        padding-left: 15%;
         padding-bottom: 50px;
         letter-spacing: 0.1em;
 
@@ -276,7 +277,7 @@ header {
         margin-left: auto;
 
         @include pc {
-            width: 75%;
+            width: 80%;
             height: 100vh;
         }
     }
@@ -285,6 +286,7 @@ header {
 
         position: absolute;
         top: 8%;
+        z-index: 999;
 
         @include pc {
             padding-left: 4%;
@@ -324,12 +326,17 @@ header {
 
 //section--------------------------------------
 section {
-    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 4%;
 
     @include pc {
-        padding-left: 190px;
+        max-width: 80%;
+        margin: 0 auto 0 20%;
+        // padding-left: 20%;
+        padding-right: 13%;
+        padding-left: 7%;
+
+
     }
 }
 
