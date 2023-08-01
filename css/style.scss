@@ -354,11 +354,13 @@ section {
     font-weight: normal;
     letter-spacing: 0.1em;
     color: $accent;
+    background-color: $white-color;
 
     @include pc {
         font-size: 70px;
         line-height: -10px;
         line-height: 1;
+        padding-left: 10px;
     }
 
     & span {
@@ -382,21 +384,24 @@ section {
         }
     }
 
-
-
     &__container {
-        justify-content: space-between;
+        justify-content: center;
         align-items: end;
         margin-bottom: 50px;
 
         @include pc {
             margin-bottom: 100px;
+            background: linear-gradient($white-color 50%, $accent 51%, $white-color 52%);
         }
 
         & p {
             display: block;
-            padding-bottom: 10px;
-            margin-left: 10px;
+            padding-bottom: 18px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-style: italic;
+            background-color: $white-color;
+
         }
     }
 

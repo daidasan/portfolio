@@ -28,3 +28,7 @@ https://www.w3schools.com/howto/howto_css_image_overlay.asp
 ページめくり
 http://www.turnjs.com/#
 https://webdesignmagazine.net/jquery-plugin-page-flip-book-effect/
+
+
+モーダルをCSSだけで実装してみて思った事
+https://www.otwo.jp/blog/css-modal/
