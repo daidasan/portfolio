@@ -1,22 +1,19 @@
 @charset "UTF-8";
+/* #FAF9F6 */
+/* #f8f8f8 */
 body {
   font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #333132;
-  background: #f8f8f8;
+  color: #3e3b35;
+  background: #fdfcf9;
   line-height: 1.5;
-  letter-spacing: 0.15em;
-}
-
-p,
-dd {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
 }
 
 a {
   text-decoration: none;
-  color: #333132;
+  color: #3e3b35;
 }
 
 ul,
@@ -43,7 +40,7 @@ header {
   height: 80px;
   width: 100%;
   padding: 0 4%;
-  background: #f8f8f8;
+  background: #fdfcf9;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -87,7 +84,7 @@ header {
   width: 100%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #f8f8f8;
+  background: #fdfcf9;
   /*動き*/
   transition: all 0.6s;
 }
@@ -126,7 +123,7 @@ header {
 }
 
 #g-nav li a {
-  color: #333132;
+  color: #3e3b35;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -153,7 +150,7 @@ header {
   position: absolute;
   left: 14px;
   height: 1px;
-  background-color: #333132;
+  background-color: #3e3b35;
   width: 45%;
 }
 
@@ -181,23 +178,33 @@ header {
 
 @media (min-width: 769px) {
   header {
-    padding: 0 4%;
+    margin-left: 4%;
+    padding: 0;
     top: 0;
-    border-right: 1px solid #333132;
+    width: 150px;
+    height: 100vh;
+    background-color: transparent;
   }
   .gnav {
     font-size: 18px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 50px;
+    letter-spacing: 0.1em;
   }
   .gnav__list {
-    display: flex;
+    flex-direction: column;
   }
   .gnav__item + .gnav__item {
-    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .gnav__link {
+    color: #C9171E;
   }
   .gnav__link:hover {
-    color: #E83929;
+    color: #C9171E;
   }
 }
 .top {
@@ -209,6 +216,7 @@ header {
 @media (min-width: 769px) {
   .top {
     padding: 0;
+    margin-top: 0;
   }
 }
 .top #slider {
@@ -220,6 +228,7 @@ header {
 @media (min-width: 769px) {
   .top #slider {
     width: 75%;
+    height: 100vh;
   }
 }
 .top__Title {
@@ -229,13 +238,14 @@ header {
 @media (min-width: 769px) {
   .top__Title {
     padding-left: 4%;
+    top: 18%;
   }
 }
 .top__Title h1 {
   font-size: 48px;
   font-weight: normal;
   margin-bottom: 15px;
-  color: #E83929;
+  color: #C9171E;
 }
 @media (min-width: 769px) {
   .top__Title h1 {
@@ -244,7 +254,7 @@ header {
 }
 .top__Title p {
   font-size: 14px;
-  color: #E83929;
+  color: #C9171E;
 }
 @media (min-width: 769px) {
   .top__Title p {
@@ -261,11 +271,16 @@ section {
   margin: 0 auto;
   padding: 100px 4%;
 }
+@media (min-width: 769px) {
+  section {
+    padding-left: 180px;
+  }
+}
 
 .sec__title {
   font-size: 35px;
   font-weight: normal;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.1em;
 }
 @media (min-width: 769px) {
   .sec__title {
@@ -406,7 +421,7 @@ section {
 }
 
 footer {
-  color: #E83929;
+  color: #C9171E;
   width: 100%;
   padding-top: 40%;
   margin-bottom: 30px;
