@@ -356,21 +356,38 @@ section {
   font-size: 14px;
 }
 
+.about__event__box {
+  padding-top: 20px;
+}
+@media (min-width: 769px) {
+  .about__event__box {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    grid-auto-flow: column;
+  }
+}
 .about__event__item dt {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   font-size: 16px;
+  border-bottom: 1px solid #180614;
 }
 .about__event__item dd {
   font-size: 12px;
+  margin-bottom: 30px;
 }
 .about__event__item time {
   font-size: 12px;
 }
 .about__event__item span {
   font-size: 12px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 .about__event__item span::before {
-  content: "| at";
+  content: "/";
   padding-right: 5px;
   margin-left: 10px;
 }
