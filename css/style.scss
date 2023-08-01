@@ -9,7 +9,7 @@ $pc: 769px;
     }
 }
 
-$white-color:#FFFBF4
+$white-color:#FAF9F6
 /* #f8f8f8 */
 ;
 $black-color:#333132;
@@ -63,42 +63,42 @@ img {
 
 //xscroll-----------------------------------
 
-@include pc {
-    .xScroll {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        position: absolute;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
+// @include pc {
+//     .xScroll {
+//         width: 100vh;
+//         height: 100vw;
+//         transform: rotate(-90deg) translateX(-100vh);
+//         transform-origin: top left;
+//         overflow-x: hidden;
+//         overflow-y: scroll;
+//         position: absolute;
+//         scrollbar-width: none;
+//         -ms-overflow-style: none;
+//         scroll-snap-type: y mandatory;
+//         scroll-behavior: smooth;
 
 
-        &__box {
-            display: flex;
-            width: 500vw;
-            transform: rotate(90deg) translateY(-100vh);
-            transform-origin: top left;
-        }
+//         &__box {
+//             display: flex;
+//             width: 500vw;
+//             transform: rotate(90deg) translateY(-100vh);
+//             transform-origin: top left;
+//         }
 
-        &__slide {
-            width: 100vw;
-            height: 100vh;
-            padding-left: 0;
-            scroll-snap-align: start;
-        }
+//         &__slide {
+//             width: 100vw;
+//             height: 100vh;
+//             padding-left: 0;
+//             scroll-snap-align: start;
+//         }
 
-    }
+//     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
+//     ::-webkit-scrollbar {
+//         display: none;
+//     }
 
-}
+// }
 
 
 //header-------------------------------------
@@ -253,9 +253,9 @@ header {
 
 @include pc {
     header {
-        height: 100vh;
-        width: 150px;
-        padding: 0;
+        // height: 100vh;
+        // width: 150px;
+        padding: 0 4%;
         top: 0;
         border-right: 1px solid $black-color;
     }
@@ -263,18 +263,19 @@ header {
     .gnav {
         // margin-left: 30px;
         font-size: 16px;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 100vh;
+        // height: 100vh;
 
         &__list {
             // margin-top: 50px;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
+            display: flex;
         }
 
         &__item+&__item {
-            margin-top: 15px;
+            margin-left: 20px;
         }
 
         &__link:hover {
@@ -569,6 +570,10 @@ section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 30px;
+        @include pc{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        }
 
     }
 
