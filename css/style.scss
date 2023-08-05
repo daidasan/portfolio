@@ -225,6 +225,7 @@ header {
     & .top__Title {
         height: 12vh;
         padding-top: 4vh;
+
         & h1 {
             font-size: 23px;
             letter-spacing: 0.3em;
@@ -234,10 +235,11 @@ header {
     & .top__Text {
         height: 17vh;
         padding-top: 4vh;
-        & p{
+
+        & p {
             font-size: 12px;
 
-            &:last-child{
+            &:last-child {
                 margin-top: 20px;
             }
         }
@@ -249,7 +251,7 @@ header {
 
 .top {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     position: relative;
 
     @include pc {
@@ -377,10 +379,7 @@ section {
 
 .sec__title {
     font-size: 28px;
-    font-weight: normal;
     letter-spacing: 0.1em;
-    color: $black-color;
-    // background-color: $white-color;
 
     @include pc {
         font-size: 70px;
@@ -390,29 +389,17 @@ section {
     }
 
     & span {
-        font-size: 12px;
-        margin-left: 10px;
-        letter-spacing: 0.05em;
+        font-size: 18px;
+        padding-left: 10px;
 
         @include pc {
             font-size: 18px;
             margin-left: 30px;
         }
-
-        &::before {
-            content: "【";
-            padding-right: 5px;
-        }
-
-        &::after {
-            content: "】";
-            padding-left: 5px;
-        }
     }
 
     &__container {
-        justify-content: center;
-        align-items: end;
+        text-align: center;
         margin-bottom: 50px;
 
         @include pc {
@@ -421,26 +408,30 @@ section {
         }
 
         & p {
-            display: block;
-            padding-bottom: 18px;
-            padding-right: 10px;
-            padding-left: 10px;
-            font-style: italic;
-            background-color: $white-color;
+            font-size: 12px;
+            letter-spacing: 0.05em;
 
+            &::before {
+                content: "【";
+                padding-right: 5px;
+            }
+
+            &::after {
+                content: "】";
+                padding-left: 5px;
+            }
         }
     }
 
 }
 
 .content__title {
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 30px;
-    font-weight: normal;
     text-align: center;
 
     & span {
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 20px;
 
         // &::before {
@@ -552,18 +543,18 @@ section {
     // }
 
     //works_nav
-    &__list {
-        font-size: 18px;
-        margin-bottom: 30px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+    // &__list {
+    //     font-size: 18px;
+    //     margin-bottom: 30px;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    // }
 
-    &__item+&__item::before {
-        content: "|";
-        font-size: 18px;
-        margin: 0 20px;
-    }
+    // &__item+&__item::before {
+    //     content: "|";
+    //     font-size: 18px;
+    //     margin: 0 20px;
+    // }
 
     //glid
     &__glid__box {
