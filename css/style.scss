@@ -470,7 +470,7 @@ section {
     }
 
     & p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -520,6 +520,41 @@ section {
     }
 }
 
+.content {
+    width: 300px;
+    height: 200px;
+
+    & img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 60s infinite linear 1s both;
+}
+
+.event__slideshow__wrap {
+    display: flex;
+    align-items: center;
+    // height: 340px;
+    overflow: hidden;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 //skill--------------------
 
@@ -560,7 +595,7 @@ section {
     &__glid__box {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
+        gap: 40px;
 
         @include pc {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -583,7 +618,6 @@ section {
     &__glid__cap {
         font-size: 12px;
         justify-content: center;
-        margin-bottom: 5px;
 
         & time::after {
             content: "|";
@@ -596,26 +630,6 @@ section {
 
 }
 
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
 //contact
 

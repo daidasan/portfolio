@@ -87,11 +87,23 @@ var scroll = new LocomotiveScroll({
 
 
 //   <!-- Initialize Swiper -->
-var swiper = new Swiper(".mySwiper", {
-	spaceBetween: 30,
-	centeredSlides: 5,
+// var swiper = new Swiper(".mySwiper", {
+// 	spaceBetween: 30,
+// 	centeredSlides: true,
+// 	autoplay: {
+// 		delay: 2500,
+// 		disableOnInteraction: boolean,
+// 	}
+	
+// });
+
+const swiper = new Swiper('.swiper', {
+	speed: 10000,//スライドの切り替え時間
+	slidesPerView: 2,//一度に表示するスライド枚数
+	loop: true, //繰り返し
+	centeredSlides: true, //アクティブなスライドをスライダーの中心に
+	preventInteractionOnTransition: true, //クリックなどをしてもスライダーの停止を防ぐ
 	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false,
-	}
-});
+	  delay: 0, //0にすることで流れ続けます。
+	},
+  });
