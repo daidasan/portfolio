@@ -569,10 +569,11 @@ section {
 
     }
 
-    &glid__item {
+    &__glid__item {
         margin: 0;
+        text-align: center;
 
-        &figcaption {
+        & figcaption {
             font-size: 14px;
         }
 
@@ -581,9 +582,10 @@ section {
 
     &__glid__cap {
         font-size: 12px;
+        justify-content: center;
         margin-bottom: 5px;
 
-        & p::after {
+        & time::after {
             content: "|";
             font-size: 10px;
             padding-left: 10px;
@@ -593,6 +595,27 @@ section {
 
 
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 //contact
 

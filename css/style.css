@@ -354,21 +354,45 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
-.worksglid__item {
+.works__glid__item {
   margin: 0;
+  text-align: center;
 }
-.worksglid__itemfigcaption {
+.works__glid__item figcaption {
   font-size: 14px;
 }
 .works__glid__cap {
   font-size: 12px;
+  justify-content: center;
   margin-bottom: 5px;
 }
-.works__glid__cap p::after {
+.works__glid__cap time::after {
   content: "|";
   font-size: 10px;
   padding-left: 10px;
   margin-right: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact {

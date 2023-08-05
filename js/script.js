@@ -84,3 +84,14 @@ var scroll = new LocomotiveScroll({
 // 		});
 // 	});
 // });
+
+
+//   <!-- Initialize Swiper -->
+var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 30,
+	centeredSlides: 5,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	}
+});

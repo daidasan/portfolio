@@ -39,6 +39,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- 自作CSS -->
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -87,7 +89,8 @@
         </div>
         <div class="top__Text">
             <p>Graphic&nbsp;&amp;&nbsp;Web&nbsp;Design</p>
-            <p><!-- Editorial&nbsp;&amp;&nbsp; -->Illustration</p>
+            <p>
+                <!-- Editorial&nbsp;&amp;&nbsp; -->Illustration</p>
             <p>/01</p>
         </div>
     </header>
@@ -109,12 +112,32 @@
                 <div class="about__me__imgBox"><img src="img/about_me.svg" alt="" width="297" height="303"></div>
                 <div class="about__me__txtBox">
                     <h3 class="content__title">代田 美須寿<span>Misuzu Daida</span></h3>
-                    <p>専門学校でグラフィックデザインを学ぶ。イラストを専攻し、在学中に4冊の絵本を制作し始めての個展を開催。物づくりが好きで友人と3人でハンドメイド雑貨ショップを結成し、学園祭やフリーマーケットに出店。卒業後は印刷会社でDTPオペレーターとして3年勤務。フライヤーからページの多い冊子など様々なデータの作成を行う。その後はギャラリーとライブハウスを併設した喫茶店に2年半勤め、通常業務や事務に加えイベントフライヤーや店頭広告物を手掛ける。2023年3月よりパソコンスクールHA*NAへ入校。Webデザインやコーディングを学ぶ。</p>
+                    <p>専門学校でグラフィックデザインを学び、イラストを専攻。在学中に4冊の絵本を制作し始めての個展を開催する。物づくりが好きで友人と3人でハンドメイド雑貨ショップを結成し、学園祭やフリーマーケットに出店。卒業後は印刷会社でDTPオペレーターとして3年勤務。フライヤーからページの多い冊子など様々なデータの作成を行う。その後はギャラリーとライブハウスを併設した喫茶店に2年半勤め、通常業務や事務に加えイベントフライヤーや店頭広告物を手掛ける。2023年3月よりパソコンスクールHA*NAへ入校。Webデザインやコーディングを学ぶ。</p>
                 </div>
             </div>
 
             <div class="about__event">
                 <h3 class="content__title">EVENT<span>開催・参加したイベント</span></h3>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/event-01.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/event-02.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/event-03.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/event-04.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/event-05.jpg" alt=""></div>
+                    </div>
+                </div>
+
                 <div class="about__event__box">
                     <dl class="about__event__item">
                         <dt><time datetime="2017-01-28">2017.01.28</time>-<time datetime="2017-01-29">29</time><span>Smart one Gallery</span><br>真夜中の晩餐展</dt>
@@ -143,6 +166,9 @@
                     </dl>
 
                 </div>
+
+
+
             </div>
         </div>
     </section>
@@ -211,60 +237,83 @@
                 <li class="works__item"><a href="" class="works__link">all</a></li>
             </ul> -->
             <div class="works__glid__box">
-                <a href="" class="works__glid__link">
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-01.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2016-01">2016.01</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">絵本&ensp;星屑のスープ</figcaption>
                     </figure>
                 </a>
-                <a href="" class="works__glid__link">
+
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-02.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2017-01">2017.01</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">絵本&ensp;三日月ベーカリー</figcaption>
                     </figure>
                 </a>
-                <a href="" class="works__glid__link">
+
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-03.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2017-01">2017.01</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">小説&ensp;夜汽車食堂</figcaption>
                     </figure>
                 </a>
-                <a href="" class="works__glid__link">
+
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-04.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2021-10">2021.10</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">絵本&ensp;まよなかの晩餐</figcaption>
                     </figure>
                 </a>
-                <a href="" class="works__glid__link">
+
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-05.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2021-10">2021.10</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">絵本&ensp;お星さまきれいだね</figcaption>
                     </figure>
                 </a>
-                <a href="" class="works__glid__link">
+
+                <a href="" class="works__glid__link editorial">
                     <figure class="works__glid__item">
-                        <img src="img/works_edi_hoshi.jpg" alt="" class="works__glid__img">
+                        <img src="img/edi-06.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
-                            <p>editorial</p><time datetime="2017-01">2017.01</time>
+                            <time datetime="2021-10">2021.10</time>
+                            <p>Editorial</p>
                         </div>
-                        <figcaption class="works__glid__text">絵本　星屑のスープ</figcaption>
+                        <figcaption class="works__glid__text">絵本&ensp;World's end</figcaption>
                     </figure>
                 </a>
+
+                <a href="" class="works__glid__link editorial">
+                    <figure class="works__glid__item">
+                        <img src="img/edi-07.jpg" alt="" class="works__glid__img">
+                        <div class="flex works__glid__cap">
+                            <time datetime="2023-01">2023.01</time>
+                            <p>Editorial</p>
+                        </div>
+                        <figcaption class="works__glid__text">ZINE&ensp;頭は今日も&nbsp;霧の中</figcaption>
+                    </figure>
+                </a>
+
             </div>
         </div><!-- .sec__content__box -->
     </section>
@@ -299,6 +348,8 @@
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--自作のJS-->
     <script src="js/script.js"></script>
 
