@@ -1,19 +1,15 @@
 @charset "UTF-8";
-/* #FAF9F6 */
-/* #f8f8f8 */
 body {
   font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #180614;
-  background: #fdfcf9;
+  color: #000;
+  background: #f8f8f8;
   line-height: 1.5;
   letter-spacing: 0.07em;
 }
 
 a {
   text-decoration: none;
-  color: #180614;
+  color: #000;
 }
 
 p,
@@ -41,16 +37,6 @@ img {
   display: flex;
 }
 
-header {
-  height: 80px;
-  width: 100%;
-  padding: 0 4%;
-  background: #fdfcf9;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
 .mobile-menu {
   display: block;
 }
@@ -69,21 +55,6 @@ header {
   }
 }
 
-.gnav__logo {
-  margin-top: 20px;
-  width: 65px;
-  height: 65px;
-}
-@media (min-width: 769px) {
-  .gnav__logo {
-    margin-top: 0;
-  }
-}
-.gnav__logo img {
-  width: 65px;
-  height: auto;
-}
-
 #g-nav {
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
   position: fixed;
@@ -94,7 +65,7 @@ header {
   width: 100%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #fdfcf9;
+  background: #f8f8f8;
   /*動き*/
   transition: all 0.6s;
 }
@@ -133,7 +104,7 @@ header {
 }
 
 #g-nav li a {
-  color: #180614;
+  color: #000;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -160,7 +131,7 @@ header {
   position: absolute;
   left: 14px;
   height: 1px;
-  background-color: #180614;
+  background-color: #000;
   width: 45%;
 }
 
@@ -186,41 +157,33 @@ header {
   width: 30%;
 }
 
-@media (min-width: 769px) {
-  header {
-    padding: 0;
-    top: 0;
-    width: 20%;
-    height: 100vh;
-    background-color: transparent;
-    border-right: 1px solid #C9171E;
-  }
-  .gnav {
-    font-size: 16px;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    padding: 15% 15%;
-    letter-spacing: 0.1em;
-  }
-  .gnav__list {
-    flex-direction: column;
-  }
-  .gnav__item + .gnav__item {
-    margin-top: 15px;
-  }
-  .gnav__link {
-    color: #C9171E;
-  }
-  .gnav__link:hover {
-    color: #C9171E;
-  }
+header {
+  height: auto;
+  width: 100%;
+  text-align: center;
 }
+header .top__Title {
+  height: 12vh;
+  padding-top: 4vh;
+}
+header .top__Title h1 {
+  font-size: 23px;
+  letter-spacing: 0.3em;
+}
+header .top__Text {
+  height: 17vh;
+  padding-top: 4vh;
+}
+header .top__Text p {
+  font-size: 12px;
+}
+header .top__Text p:last-child {
+  margin-top: 20px;
+}
+
 .top {
-  padding-left: 4%;
-  margin: 80px 0 50px 0;
   width: 100vw;
+  height: 70vh;
   position: relative;
 }
 @media (min-width: 769px) {
@@ -230,10 +193,8 @@ header {
   }
 }
 .top #slider {
-  width: 90%;
-  height: 88vh;
-  margin-right: 0;
-  margin-left: auto;
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 769px) {
   .top #slider {
@@ -241,48 +202,10 @@ header {
     height: 100vh;
   }
 }
-.top__Title {
-  position: absolute;
-  top: 8%;
-  z-index: 999;
-}
-@media (min-width: 769px) {
-  .top__Title {
-    top: 120px;
-    line-height: 1.2;
-    text-align: center;
-  }
-}
-.top__Title h1 {
-  font-size: 48px;
-  font-weight: normal;
-  margin-bottom: 15px;
-  color: #C9171E;
-  letter-spacing: 0.1em;
-}
-@media (min-width: 769px) {
-  .top__Title h1 {
-    font-size: 38px;
-  }
-}
-.top__Title p {
-  font-size: 14px;
-  color: #C9171E;
-  font-style: italic;
-}
-@media (min-width: 769px) {
-  .top__Title p {
-    line-height: 1.75;
-  }
-}
-.top__Title p:last-child {
-  display: inline-block;
-  margin-top: 10px;
-}
 
 section {
   margin: 0 auto;
-  padding: 100px 4%;
+  padding: 100px 6vw;
 }
 @media (min-width: 769px) {
   section {
@@ -294,11 +217,10 @@ section {
 }
 
 .sec__title {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: normal;
   letter-spacing: 0.1em;
-  color: #C9171E;
-  background-color: #fdfcf9;
+  color: #000;
 }
 @media (min-width: 769px) {
   .sec__title {
@@ -335,7 +257,7 @@ section {
 @media (min-width: 769px) {
   .sec__title__container {
     margin-bottom: 100px;
-    background: linear-gradient(#fdfcf9 50%, #C9171E 51%, #fdfcf9 52%);
+    background: linear-gradient(#f8f8f8 50%, #C9171E 51%, #f8f8f8 52%);
   }
 }
 .sec__title__container p {
@@ -344,7 +266,7 @@ section {
   padding-right: 10px;
   padding-left: 10px;
   font-style: italic;
-  background-color: #fdfcf9;
+  background-color: #f8f8f8;
 }
 
 .content__title {
@@ -402,7 +324,7 @@ section {
   margin-bottom: 10px;
   padding-bottom: 5px;
   font-size: 16px;
-  border-bottom: 1px solid #180614;
+  border-bottom: 1px solid #000;
 }
 .about__event__item dd {
   font-size: 12px;

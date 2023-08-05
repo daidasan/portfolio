@@ -9,13 +9,14 @@ $pc: 769px;
     }
 }
 
-$white-color:#fdfcf9;
+$white-color:
+/* #fdfcf9;
 /* #FAF9F6 */
-/* #f8f8f8 */
-;
-$black-color:
+#f8f8f8;
+$black-color:#000
 /* #333132 */
-#180614;
+/* #180614 */
+;
 $accent:#C9171E
 /* #783438 */
 /* #E83929 */
@@ -29,8 +30,6 @@ $accent:#C9171E
 
 body {
     font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     color: $black-color;
     background: $white-color;
     line-height: 1.5;
@@ -69,16 +68,7 @@ img {
     display: flex;
 }
 
-//header-------------------------------------
-header {
-    height: 80px;
-    width: 100%;
-    padding: 0 4%;
-    background: $white-color;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
+
 
 //gnav-------------
 .mobile-menu {
@@ -99,20 +89,20 @@ header {
 
 
 //モバイル用ハンバーガーメニュー---
-.gnav__logo {
-    margin-top: 20px;
-    width: 65px;
-    height: 65px;
+// .gnav__logo {
+//     margin-top: 20px;
+//     width: 65px;
+//     height: 65px;
 
-    @include pc{
-        margin-top: 0;
-    }
+//     @include pc{
+//         margin-top: 0;
+//     }
 
-    & img {
-        width: 65px;
-        height: auto;
-    }
-}
+//     & img {
+//         width: 65px;
+//         height: auto;
+//     }
+// }
 
 #g-nav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -217,55 +207,49 @@ header {
     width: 30%;
 }
 
-//デスクトップ用メニュー-----
 
-@include pc {
-    header {
-        padding: 0;
-        top: 0;
-        width: 20%;
-        height: 100vh;
-        background-color: transparent;
-        border-right: 1px solid $accent;
+//header-------------------------------------
+
+
+header {
+    height: auto;
+    width: 100%;
+    // padding: 0 4%;
+    text-align: center;
+
+    // background: $white-color;
+    // // position: fixed;
+    // top: 0;
+    // z-index: 999;
+
+    & .top__Title {
+        height: 12vh;
+        padding-top: 4vh;
+        & h1 {
+            font-size: 23px;
+            letter-spacing: 0.3em;
+        }
     }
 
-    .gnav {
-        font-size: 16px;
-        justify-content: space-between;
-        align-items:center;
-        flex-direction: column;
-        height: 100vh;
-        padding: 15% 15%;
-        letter-spacing: 0.1em;
+    & .top__Text {
+        height: 17vh;
+        padding-top: 4vh;
+        & p{
+            font-size: 12px;
 
-
-        &__list {
-            // display: flex;
-            flex-direction: column;
-        }
-
-        &__item+&__item {
-            margin-top: 15px;
-        }
-
-        &__link {
-            color: $accent;
-        }
-
-        &__link:hover {
-            color: $accent;
+            &:last-child{
+                margin-top: 20px;
+            }
         }
     }
 }
-
 
 //topTitle------------
 
 
 .top {
-    padding-left: 4%;
-    margin: 80px 0 50px 0;
     width: 100vw;
+    height: 70vh;
     position: relative;
 
     @include pc {
@@ -274,10 +258,10 @@ header {
     }
 
     & #slider {
-        width: 90%;
-        height: 88vh;
-        margin-right: 0;
-        margin-left: auto;
+        width: 100%;
+        height: 100%;
+        // margin-right: 0;
+        // margin-left: auto;
 
         @include pc {
             width: 80%;
@@ -285,57 +269,99 @@ header {
         }
     }
 
-    &__Title {
+    // &__Title {
 
-        position: absolute;
-        top: 8%;
-        z-index: 999;
+    //     position: absolute;
+    //     top: 8%;
+    //     z-index: 999;
 
-        @include pc {
-            // padding-left: 4%;
-            top: 120px;
-            line-height: 1.2;
-            text-align: center;
+    //     @include pc {
+    //         // padding-left: 4%;
+    //         top: 120px;
+    //         line-height: 1.2;
+    //         text-align: center;
 
-        }
+    //     }
 
-        & h1 {
-            font-size: 48px;
-            font-weight: normal;
-            margin-bottom: 15px;
-            color: $accent;
-            letter-spacing: 0.1em;
+    //     & h1 {
+    //         font-size: 48px;
+    //         font-weight: normal;
+    //         margin-bottom: 15px;
+    //         color: $black-color;
+    //         letter-spacing: 0.1em;
 
-            @include pc {
-                font-size: 38px;
-            }
+    //         @include pc {
+    //             font-size: 38px;
+    //         }
 
-        }
+    //     }
 
-        & p {
-            font-size: 14px;
-            color: $accent;
-            font-style: italic;
+    //     & p {
+    //         font-size: 14px;
+    //         color: $black-color;
+    //         font-style: italic;
 
-            @include pc {
-                // font-size: 16px;
-                line-height: 1.75;
+    //         @include pc {
+    //             // font-size: 16px;
+    //             line-height: 1.75;
 
-            }
+    //         }
 
-            &:last-child {
-                display: inline-block;
-                margin-top: 10px;
-            }
-        }
-    }
+    //         &:last-child {
+    //             display: inline-block;
+    //             margin-top: 10px;
+    //         }
+    //     }
+    // }
 }
+
+
+
+// @include pc {
+//     header {
+//         padding: 0;
+//         top: 0;
+//         width: 20%;
+//         height: 100vh;
+//         background-color: transparent;
+//         border-right: 1px solid $accent;
+//     }
+
+//     .gnav {
+//         font-size: 16px;
+//         justify-content: space-between;
+//         align-items:center;
+//         flex-direction: column;
+//         height: 100vh;
+//         padding: 15% 15%;
+//         letter-spacing: 0.1em;
+
+
+//         &__list {
+//             // display: flex;
+//             flex-direction: column;
+//         }
+
+//         &__item+&__item {
+//             margin-top: 15px;
+//         }
+
+//         &__link {
+//             color: $accent;
+//         }
+
+//         &__link:hover {
+//             color: $accent;
+//         }
+//     }
+// }
+
 
 
 //section--------------------------------------
 section {
     margin: 0 auto;
-    padding: 100px 4%;
+    padding: 100px 6vw;
 
     @include pc {
         max-width: 80%;
@@ -350,11 +376,11 @@ section {
 
 
 .sec__title {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: normal;
     letter-spacing: 0.1em;
-    color: $accent;
-    background-color: $white-color;
+    color: $black-color;
+    // background-color: $white-color;
 
     @include pc {
         font-size: 70px;
