@@ -376,7 +376,7 @@ section {
 
 .sec__title {
     font-size: 28px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     font-weight: normal;
 
     @include pc {
@@ -388,7 +388,8 @@ section {
 
     & span {
         font-size: 18px;
-        padding-left: 10px;
+        padding-left: 5px;
+        letter-spacing: 0.1em;
 
         @include pc {
             font-size: 18px;
@@ -427,11 +428,13 @@ section {
     font-size: 21px;
     margin-bottom: 30px;
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
+    font-weight: normal;
 
     & span {
-        font-size: 13px;
+        font-size: 14px;
         opacity: .6;
+        letter-spacing: 0.07em;
 
         // margin-left: 20px;
 

@@ -215,7 +215,7 @@ section {
 
 .sec__title {
   font-size: 28px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   font-weight: normal;
 }
 @media (min-width: 769px) {
@@ -228,7 +228,8 @@ section {
 }
 .sec__title span {
   font-size: 18px;
-  padding-left: 10px;
+  padding-left: 5px;
+  letter-spacing: 0.1em;
 }
 @media (min-width: 769px) {
   .sec__title span {
@@ -263,11 +264,13 @@ section {
   font-size: 21px;
   margin-bottom: 30px;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  font-weight: normal;
 }
 .content__title span {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 0.6;
+  letter-spacing: 0.07em;
 }
 
 .about__me {
