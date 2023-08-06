@@ -34,7 +34,7 @@ body {
     background: $white-color;
     line-height: 1.5;
     letter-spacing: 0.07em;
-
+    font-weight: normal;
 
 }
 
@@ -380,6 +380,7 @@ section {
 .sec__title {
     font-size: 28px;
     letter-spacing: 0.1em;
+    font-weight: normal;
 
     @include pc {
         font-size: 70px;
@@ -695,4 +696,8 @@ footer {
             mix-blend-mode:multiply;
         }
 
+}
+
+.bgc{
+    background-color: #dddcd6;
 }

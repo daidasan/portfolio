@@ -5,6 +5,7 @@ body {
   background: #f8f8f8;
   line-height: 1.5;
   letter-spacing: 0.07em;
+  font-weight: normal;
 }
 
 a {
@@ -219,6 +220,7 @@ section {
 .sec__title {
   font-size: 28px;
   letter-spacing: 0.1em;
+  font-weight: normal;
 }
 @media (min-width: 769px) {
   .sec__title {
@@ -461,5 +463,9 @@ footer small {
 }
 footer img {
   mix-blend-mode: multiply;
+}
+
+.bgc {
+  background-color: #dddcd6;
 }
 /*# sourceMappingURL=style.css.map */
