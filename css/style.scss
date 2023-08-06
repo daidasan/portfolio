@@ -167,9 +167,9 @@ img {
     position: fixed;
     z-index: 9999;
     /*ボタンを最前面に*/
-    top: 20px;
+    top: 30px;
     right: 0;
-    width: 70px;
+    width: 50px;
     height: 50px;
     cursor: pointer;
 }
@@ -182,7 +182,7 @@ img {
     left: 14px;
     height: 1px;
     background-color: $black-color;
-    width: 45%;
+    width: 40%;
 }
 
 .openbtn span:nth-of-type(1) {
@@ -190,7 +190,7 @@ img {
 }
 
 .openbtn span:nth-of-type(2) {
-    top: 31px;
+    top: 25px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -524,7 +524,7 @@ section {
     width: 300px;
     height: 200px;
 
-    & img{
+    & img {
         display: block;
         width: 100%;
         height: 100%;
@@ -559,10 +559,11 @@ section {
 //skill--------------------
 
 .about__skill {
-    & .sec__title__container{
+    & .sec__title__container {
         margin-bottom: 0;
     }
 }
+
 .skill__container {
     margin-bottom: 100px;
     padding: 20px;
@@ -571,8 +572,9 @@ section {
     gap: 20px;
     border: 1px solid $black-color;
 
-    & dt{
+    & dt {
         margin-bottom: 0;
+        text-align: left;
     }
 
     & dl dd {
@@ -645,7 +647,17 @@ section {
 //contact
 
 .contact {
-    padding-bottom: 0;
+    text-align: center;
+
+    &__box {
+        & p{
+            font-size: 14px;
+        }
+        & address{
+            font-style: normal;
+            margin: 20px 0;
+        }
+    }
 
     @include pc {
 
@@ -670,18 +682,17 @@ section {
 //footer---------------------------------------
 
 footer {
-    color: $accent;
     width: 100%;
-    padding-top: 40%;
-    // border-top: 1px solid $black-color;
-    margin-bottom: 30px;
+    height: auto;
     text-align: center;
-    background-image: url(../img/footer.jpg);
-    background-position: top center;
-    background-size: contain;
-    mix-blend-mode: multiply;
 
     & small {
         font-size: 11px;
+        margin: 20px 0;
+        display: inline-block;
     }
+    & img{
+            mix-blend-mode:multiply;
+        }
+
 }
