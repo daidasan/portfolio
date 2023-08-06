@@ -43,10 +43,6 @@ a {
     color: $black-color;
 }
 
-p,
-dd {
-    line-height: 1.75em;
-}
 
 ul,
 ol {
@@ -229,6 +225,7 @@ header {
         & h1 {
             font-size: 23px;
             letter-spacing: 0.3em;
+            font-weight: normal;
         }
     }
 
@@ -237,7 +234,7 @@ header {
         padding-top: 4vh;
 
         & p {
-            font-size: 12px;
+            font-size: 14px;
 
             &:last-child {
                 margin-top: 20px;
@@ -363,7 +360,7 @@ header {
 //section--------------------------------------
 section {
     margin: 0 auto;
-    padding: 100px 6vw;
+    padding: 80px 6vw;
 
     @include pc {
         max-width: 80%;
@@ -409,7 +406,7 @@ section {
         }
 
         & p {
-            font-size: 12px;
+            font-size: 14px;
             letter-spacing: 0.05em;
 
             &::before {
@@ -430,10 +427,13 @@ section {
     font-size: 21px;
     margin-bottom: 30px;
     text-align: center;
+    letter-spacing: 0.1em;
 
     & span {
-        font-size: 12px;
-        margin-left: 20px;
+        font-size: 13px;
+        opacity: .6;
+
+        // margin-left: 20px;
 
         // &::before {
         //     content: "/";
@@ -447,7 +447,7 @@ section {
 
 //about----------------------------------
 .about__me {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
     @include pc {
         display: flex;
@@ -471,7 +471,7 @@ section {
     }
 
     & p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -496,28 +496,28 @@ section {
             padding-bottom: 5px;
             font-size: 16px;
             border-bottom: 1px solid $black-color;
-        }
 
-        & dd {
-            font-size: 12px;
-            margin-bottom: 30px;
-        }
-
-        & time {
-            font-size: 12px;
-        }
-
-        & span {
-            font-size: 12px;
-            display: inline-block;
-            margin-bottom: 5px;
-
-            &::before {
+            & span::before {
                 content: "/";
                 padding-right: 5px;
                 margin-left: 10px;
             }
         }
+
+        & dd {
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        & span,
+        & time {
+            opacity: 0.6;
+            font-size: 12px;
+            // display: inline-block;
+            margin-bottom: 5px;
+        }
+
+
     }
 }
 
@@ -566,7 +566,7 @@ section {
 }
 
 .skill__container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -574,12 +574,13 @@ section {
     border: 1px solid $black-color;
 
     & dt {
-        margin-bottom: 0;
+        margin-bottom: 7px;
         text-align: left;
+        font-size: 18px;
     }
 
     & dl dd {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -623,19 +624,21 @@ section {
         text-align: center;
 
         & figcaption {
-            font-size: 14px;
+            font-size: 16px;
         }
 
 
     }
 
     &__glid__cap {
-        font-size: 12px;
+        font-size: 14px;
         justify-content: center;
+        opacity: .6;
+        margin-bottom: 5px;
 
         & time::after {
             content: "|";
-            font-size: 10px;
+            font-size: 12px;
             padding-left: 10px;
             margin-right: 10px;
         }
@@ -651,10 +654,11 @@ section {
     text-align: center;
 
     &__box {
-        & p{
+        & p {
             font-size: 14px;
         }
-        & address{
+
+        & address {
             font-style: normal;
             margin: 20px 0;
         }
@@ -688,16 +692,17 @@ footer {
     text-align: center;
 
     & small {
-        font-size: 11px;
+        font-size: 12px;
         margin: 20px 0;
         display: inline-block;
     }
-    & img{
-            mix-blend-mode:multiply;
-        }
+
+    & img {
+        mix-blend-mode: multiply;
+    }
 
 }
 
-.bgc{
+.bgc {
     background-color: #dddcd6;
 }
