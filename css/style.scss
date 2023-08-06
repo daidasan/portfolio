@@ -558,14 +558,25 @@ section {
 
 //skill--------------------
 
+.about__skill {
+    & .sec__title__container{
+        margin-bottom: 0;
+    }
+}
 .skill__container {
+    margin-bottom: 100px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    border: 1px solid $black-color;
 
+    & dt{
+        margin-bottom: 0;
+    }
 
     & dl dd {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
