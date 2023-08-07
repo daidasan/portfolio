@@ -22,7 +22,7 @@ if (windowwidth > 768) {
 			src: './img/bigbg01.jpg'
 		},
 		{
-			src: './img/bigbg02.jpg'
+			src: './img/sp-bigbg02.jpg'
 		},
 		// {
 		// 	src: './img/bigbg03.jpg'
