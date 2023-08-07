@@ -35,10 +35,15 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <!-- ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- モーダル -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"> -->
+
+    <!-- スライドショー -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <!-- 自作CSS -->
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -119,7 +124,7 @@
                 </div>
                 <div class="skill__container sec__content__box">
                     <dl>
-                        <dt class="content__title">Illustrato
+                        <dt class="content__title">Illustrator
                             <!-- <span>使用歴7年・実務歴5年</span> -->
                         </dt>
                         <dd>使用歴7年・実務歴5年。ロゴ、LINEスタンプ、名刺、フライヤー、社内新聞など幅広く制作可能です。</dd>
@@ -244,8 +249,9 @@
                 <li class="works__item"><a href="" class="works__link">othert</a></li>
                 <li class="works__item"><a href="" class="works__link">all</a></li>
             </ul> -->
+
             <div class="works__glid__box">
-                <a href="" class="works__glid__link editorial">
+                <a href="#edi-01" class="works__glid__link editorial">
                     <figure class="works__glid__item">
                         <img src="img/edi-01.jpg" alt="" class="works__glid__img">
                         <div class="flex works__glid__cap">
@@ -322,7 +328,24 @@
                     </figure>
                 </a>
 
+
             </div>
+
+            <ul class="info-list">
+                <li><a href="#info-1" class="info">
+                        <!--リンク先は表示させたいエリアのid名を指定-->
+                        <dl>
+                            <dt>2021.5.12</dt>
+                            <dd> お知らせのタイトル</dd>
+                        </dl>
+                    </a></li>
+            </ul>
+            <section id="info-1" class="hide-area">
+                <!--表示エリアのHTML。id名にリンク先と同じ名前を指定。非表示にするためhide-areaというクラス名も指定。-->
+                <h2>お知らせ</h2>
+                <p> おしらせの内容が入ります。</p>
+            </section>
+
         </div><!-- .sec__content__box -->
     </section>
 
@@ -347,11 +370,15 @@
 
     <!-- gnav -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- モーダル -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script> -->
+
     <!--自作のJS-->
     <script src="js/script.js"></script>
 
