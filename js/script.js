@@ -64,6 +64,9 @@ $("#g-nav a").click(function () { //ナビゲーションのリンクがクリ�
 
 
 
+
+
+
 // モーダル表示
 class Modal {
     constructor(targetELm) {
