@@ -1,11 +1,17 @@
 @charset "UTF-8";
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /*コンテナ要素のスタイル*/
 .swiper {
   display: flex;
   flex-flow: column nowrap;
   gap: 16px;
-  height: 300px;
-  width: 100%;
+  height: auto;
+  max-width: 600px;
 }
 
 .swiper-container {
@@ -27,10 +33,6 @@
 }
 
 /* サムネイルのスタイル */
-.swiper-thumbnail {
-  height: 50px;
-}
-
 .swiper-thumbnail .swiper-wrapper {
   flex-direction: row;
 }
@@ -39,42 +41,39 @@
 .swiper-thumbnail .swiper-slide {
   flex-flow: row nowrap;
   cursor: pointer;
-  opacity: 0.2;
   transition: opacity 0.5s;
 }
 
 .swiper-thumbnail .swiper-slide.swiper-slide-thumb-active {
-  opacity: 1;
+  opacity: 0.4;
 }
 
-@media (min-width: 769px) {
-  .works {
-    max-width: 700px;
-  }
-}
-/*PCサイズのスタイル*/
-.closebtn {
+.closeBtn {
+  top: 0;
+  right: 0;
+  cursor: pointer;
   display: block;
-  position: relative;
+  position: fixed;
   width: 30px;
   height: 30px;
+  margin: 30px 30px 0 0;
 }
-.closebtn::before, .closebtn::after {
+.closeBtn::before, .closeBtn::after {
   /* 共通設定 */
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 5px;
+  width: 1px;
   /* 棒の幅（太さ） */
   height: 30px;
   /* 棒の高さ */
-  background: #333;
+  background: #000;
 }
-.closebtn::before {
+.closeBtn::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.closebtn::after {
+.closeBtn::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 /*# sourceMappingURL=works.css.map */
