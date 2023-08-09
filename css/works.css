@@ -1,10 +1,4 @@
 @charset "UTF-8";
-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 8vw;
-}
-
 .closeBtn {
   top: 0;
   right: 0;
@@ -33,6 +27,12 @@ section {
 }
 .closeBtn::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+section {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 8vw;
 }
 
 /*コンテナ要素のスタイル*/
@@ -90,9 +90,31 @@ section {
     width: 48%;
   }
 }
+.worksHtml__text {
+  margin-top: 30px;
+}
+.worksHtml__text .works__glid__cap {
+  justify-content: start;
+}
+.worksHtml__text h3 {
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+.worksHtml__text__cap {
+  margin-top: 20px;
+}
+.worksHtml__text__cap p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
 @media (min-width: 769px) {
   .worksHtml__text {
     width: 40%;
   }
+}
+
+footer {
+  border-top: 1px solid #000;
 }
 /*# sourceMappingURL=works.css.map */

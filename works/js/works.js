@@ -19,10 +19,10 @@ const swiperThumbnail = new Swiper(".swiper-thumbnail", {
 // スライダー
 const slider = new Swiper(".slider", {
   spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
   autoplay: true,
   loop: true,
   thumbs: {
