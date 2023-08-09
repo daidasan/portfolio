@@ -364,7 +364,7 @@ section {
   font-size: 14px;
   justify-content: center;
   opacity: 0.6;
-  margin-bottom: 5px;
+  margin: 7px 0 5px 0;
 }
 .works__glid__cap time::after {
   content: "|";
