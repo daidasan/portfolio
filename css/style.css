@@ -111,7 +111,7 @@ img {
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
   /*ボタンを最前面に*/
   top: 30px;
   right: 0;
@@ -425,107 +425,6 @@ section {
   margin-right: 10px;
 }
 
-/* //+++++++++++++++++++++++++++++++++++++++++
-// モーダル */
-.modalInclude {
-  display: none;
-}
-
-.modal {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 8vw;
-  transform: translate(-50%, -50%);
-  overflow: scroll;
-  background: #f8f8f8;
-  transition: all 0.5s 0s ease;
-}
-
-.modal .modal-closebtn {
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  display: block;
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  margin: 20px 20px 0 0;
-}
-.modal .modal-closebtn::before, .modal .modal-closebtn::after {
-  /* 共通設定 */
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1px;
-  /* 棒の幅（太さ） */
-  height: 30px;
-  /* 棒の高さ */
-  background: #000;
-}
-.modal .modal-closebtn::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.modal .modal-closebtn::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.modal.visible {
-  display: block;
-  opacity: 1;
-  z-index: 999;
-}
-
-.fadein {
-  -webkit-animation: fadein 0.3s;
-          animation: fadein 0.3s;
-}
-
-.fadeout {
-  -webkit-animation: fadeout 0.3s;
-          animation: fadeout 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
 .contact {
   text-align: center;
 }
