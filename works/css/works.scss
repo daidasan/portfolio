@@ -29,8 +29,43 @@ $accent:#C9171E
 section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0;
+    padding: 8vw;
 }
+
+
+.closeBtn {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin: 30px 30px 0 0;
+
+    &::before,
+    &::after {
+        /* 共通設定 */
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        /* 棒の幅（太さ） */
+        height: 30px;
+        /* 棒の高さ */
+        background: $black-color;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
 
 
 /*コンテナ要素のスタイル*/
@@ -40,7 +75,7 @@ section {
     gap: 16px;
     height: auto;
     max-width: 600px;
-
+    margin: 0;
 }
 
 .swiper-container {
@@ -93,66 +128,29 @@ section {
 
 
 
-// @include pc {
+.worksHtml {
 
-//     .works {
-//         max-width: 700px;
-//     }
+    &__container {
 
-// }
-
-// /*PCサイズのスタイル*/
-// @include pc {
-//     .swiper {
-//         flex-flow: row nowrap;
-//         height: 600px;
-//         width: auto;
-//     }
-
-//     .swiper-thumbnail {
-//         width: 20%;
-//         height: 100%;
-//     }
-
-//     .swiper-thumbnail .swiper-wrapper {
-//         flex-direction: column;
-//     }
-
-//     .swiper-thumbnail .swiper-slide {
-//         flex-flow: column nowrap;
-//     }
-// }
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
 
 
-.closeBtn {
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    display: block;
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    margin: 30px 30px 0 0;
+        & .swiper {
 
-    &::before,
-    &::after {
-        /* 共通設定 */
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 1px;
-        /* 棒の幅（太さ） */
-        height: 30px;
-        /* 棒の高さ */
-        background: $black-color;
+            @include pc {
+                width: 48%;
+            }
+        }
     }
 
-    &::before {
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
+    &__text {
 
-    &::after {
-        transform: translate(-50%, -50%) rotate(-45deg);
+        @include pc {
+            width: 40%;
+
+        }
     }
 }
