@@ -35,6 +35,9 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
@@ -44,7 +47,7 @@
     <!-- works css -->
     <link rel="stylesheet" href="css/works.min.css">
 
-    
+
 
 </head>
 
@@ -52,122 +55,60 @@
 <body>
     <!-- works--------------------------------------- -->
     <section class="works" id="works">
-        <div class="sec__title__container">
+        <div class="closebtn"></div>
+
+        <!-- <div class="sec__title__container">
             <h2 class="sec__title works__title">Works<span>/03</span></h2>
             <p>制作物</p>
-        </div>
+        </div> -->
         <div class="sec__content__box">
 
-            <div class="works__glid__box">
-                <a href="#information" class="works__glid__link editorial modalBtn">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-01.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2016-01">2016.01</time>
-                            <p>Editorial</p>
+
+            <div class="swiper">
+
+                <div class="swiper-container slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <img src="img/edi-01.jpg" alt="">
                         </div>
-                        <figcaption class="works__glid__text">絵本&ensp;星屑のスープ</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-02.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2017-01">2017.01</time>
-                            <p>Editorial</p>
+                        <div class="swiper-slide slide2">
+                            <img src="img/edi-01-01.jpg" alt="">
                         </div>
-                        <figcaption class="works__glid__text">絵本&ensp;三日月ベーカリー</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-03.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2017-01">2017.01</time>
-                            <p>Editorial</p>
+                        <div class="swiper-slide slide3">
+                            <img src="img/edi-01-02.jpg" alt="">
                         </div>
-                        <figcaption class="works__glid__text">小説&ensp;夜汽車食堂</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-04.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2021-10">2021.10</time>
-                            <p>Editorial</p>
-                        </div>
-                        <figcaption class="works__glid__text">絵本&ensp;まよなかの晩餐</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-05.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2021-10">2021.10</time>
-                            <p>Editorial</p>
-                        </div>
-                        <figcaption class="works__glid__text">絵本&ensp;お星さまきれいだね</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-06.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2021-10">2021.10</time>
-                            <p>Editorial</p>
-                        </div>
-                        <figcaption class="works__glid__text">絵本&ensp;World's end</figcaption>
-                    </figure>
-                </a>
-
-                <a href="" class="works__glid__link editorial">
-                    <figure class="works__glid__item">
-                        <img src="img/edi-07.jpg" alt="" class="works__glid__img">
-                        <div class="flex works__glid__cap">
-                            <time datetime="2023-01">2023.01</time>
-                            <p>Editorial</p>
-                        </div>
-                        <figcaption class="works__glid__text">ZINE&ensp;頭は今日も&nbsp;霧の中</figcaption>
-                    </figure>
-                </a>
-
-
-            </div>
-
-            <!-- <div id="information" class="modalInclude modal">
-                <div class="modalItem"></div>
-                <div class="guide">
-
-                    <div class="modal__glid">
-                        <div class="modal__glid__item">
-                            <img src="img/edi-01.jpg">
-                        </div>
-                        <div class="modal__glid__item">
-                            <img src="img/edi-01.jpg">
-                        </div>
-                        <div class="modal__glid__item">
-                            <img src="img/edi-01.jpg">
+                        <div class="swiper-slide slide4">
+                            <img src="img/edi-01-03.jpg" alt="">
                         </div>
                     </div>
-                    <div class="modal__cap__box">
-                        <h3 class="h-ttl j-serif modal__title">絵本&ensp;星屑のスープ</h3>
-                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                    </div>modal__glid
-
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                 </div>
-            </div>modalInclude -->
-            
-        </div><!-- .sec__content__box -->
+
+                <div class="swiper-container swiper-thumbnail">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <img src="img/edi-01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <img src="img/edi-01-01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <img src="img/edi-01-02.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <img src="img/edi-01-03.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
     <!-- contact--------------------------------------- -->
-    <div class="bgc">
+    <!-- <div class="bgc">
         <section class="contact" id="contact">
             <div class="sec__title__container">
                 <h2 class="sec__title contact__title">Contact<span>/04</span></h2>
@@ -182,9 +123,13 @@
             <small>&copy;2023 Misuzu Daida</small>
             <img src="img/footer.jpg" alt="" width="1500" height="507">
         </footer>
-    </div>
+    </div> -->
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/works.js"></script>
 </body>
 
 </html>

@@ -1,1 +1,152 @@
 @charset "utf-8";
+
+//変数--------------------
+$pc: 769px;
+
+@mixin pc {
+    @media(min-width:($pc)) {
+        @content;
+    }
+}
+
+$white-color:
+/* #fdfcf9;
+/* #FAF9F6 */
+#f8f8f8;
+$black-color:#000
+/* #333132 */
+/* #180614 */
+;
+$accent:#C9171E
+/* #783438 */
+/* #E83929 */
+/* #832F12 */
+/* #7F6D35 */
+;
+//------------------------
+
+
+
+/*コンテナ要素のスタイル*/
+.swiper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    height: 300px;
+    width: 100%;
+
+}
+
+.swiper-container {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+/*各スライドのスタイル*/
+.swiper-slide {
+    flex-flow: column nowrap;
+    /*テキストの位置調整*/
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    // /*テキストの色と太さを指定*/
+    // color: #212121;
+    // font-weight: bold;
+    // font-size: max(0.5rem, 1.5vw);
+}
+
+/* スライダーのスタイル */
+.slider {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* サムネイルのスタイル */
+.swiper-thumbnail {
+    height: 50px;
+}
+
+.swiper-thumbnail .swiper-wrapper {
+    flex-direction: row;
+}
+
+/*アクティブなときのスタイル*/
+.swiper-thumbnail .swiper-slide {
+    flex-flow: row nowrap;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+
+.swiper-thumbnail .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+
+@include pc {
+
+    .works {
+        max-width: 700px;
+    }
+
+}
+
+// /*矢印ボタンの色を変更*/
+// .swiper-button-next,
+// .swiper-button-prev {
+//     color: #212121;
+// }
+
+/*PCサイズのスタイル*/
+// @include pc {
+//     .swiper {
+//         flex-flow: row nowrap;
+//     }
+
+//     .swiper-thumbnail {
+//         width: 20%;
+//         height: 100%;
+//     }
+
+//     .swiper-thumbnail .swiper-wrapper {
+//         flex-direction: column;
+//     }
+
+//     .swiper-thumbnail .swiper-slide {
+//         flex-flow: column nowrap;
+//     }
+// }
+
+
+.closebtn {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+        /* 共通設定 */
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        /* 棒の幅（太さ） */
+        height: 30px;
+        /* 棒の高さ */
+        background: #333;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
