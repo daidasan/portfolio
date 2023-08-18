@@ -396,8 +396,20 @@ footer small {
   margin: 20px 0;
   display: inline-block;
 }
+@media (min-width: 769px) {
+  footer small {
+    margin: 0;
+  }
+}
 footer img {
   mix-blend-mode: multiply;
+}
+@media (min-width: 769px) {
+  footer img {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .bgc {

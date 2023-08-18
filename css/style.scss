@@ -557,11 +557,20 @@ footer {
         font-size: 12px;
         margin: 20px 0;
         display: inline-block;
+
+        @include pc{
+            margin: 0;
+        }
     }
 
     & img {
         mix-blend-mode: multiply;
         
+        @include pc{
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
 }
