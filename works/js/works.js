@@ -5,7 +5,7 @@
 // サムネイル
 const swiperThumbnail = new Swiper(".swiper-thumbnail", {
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 5,
   centeredSlides: true,
   centeredSlidesBounds: true,
   watchSlidesProgress: true,
