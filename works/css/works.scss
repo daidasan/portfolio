@@ -27,7 +27,16 @@ $accent:#C9171E
 
 
 
+.closeBtn__box {
+    max-width: 1100px;
+    margin: 0 auto;
+    // background-color: $white-color;
+    // opacity: .6;
 
+    @include pc {
+        position: relative;
+    }
+}
 
 .closeBtn {
     top: 0;
@@ -39,6 +48,10 @@ $accent:#C9171E
     height: 30px;
     margin: 30px 30px 0 0;
     z-index: 999;
+
+    @include pc {
+        position: absolute;
+    }
 
     &::before,
     &::after {
@@ -65,8 +78,13 @@ $accent:#C9171E
 
 section {
     max-width: 1100px;
-    margin: 70px auto;
-    padding: 8vw;
+    margin: 0 auto;
+    padding: 100px 8vw;
+
+    @include pc {
+        padding: 100px 0;
+
+    }
 }
 
 /*コンテナ要素のスタイル*/
@@ -142,13 +160,17 @@ section {
         & .swiper {
 
             @include pc {
-                width: 48%;
+                width: 50%;
             }
         }
     }
 
     &__text {
         margin-top: 30px;
+
+        @include pc{
+            margin-top: 0;
+        }
 
         & .works__glid__cap {
             justify-content: start;
@@ -161,13 +183,37 @@ section {
         }
 
         &__cap {
-            margin-top: 20px;
+            margin-top: 30px;
 
             & p {
                 font-size: 14px;
-                margin-bottom: 30px;
+                // margin-bottom: 30px;
+            }
+
+            &__line {
+                display: inline-block;
+                width: 14px;
+                border-top: 1px solid $black-color;
+                margin: 40px 0 35px 0;
+            }
+
+            &__list {
+
+                & dt,
+                & dd {
+                    font-size: 12px;
+                }
+
+                & dt::after{
+                    content: "：";
+                }
+                & dd{
+                    margin-bottom: 10px;
+                }
             }
         }
+
+
 
 
 
@@ -177,6 +223,6 @@ section {
     }
 }
 
-footer{
+footer {
     border-top: 1px solid $black-color;
 }

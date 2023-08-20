@@ -170,6 +170,7 @@ header .top__Text p:last-child {
 @media (min-width: 769px) {
   .top {
     height: 70vh;
+    background-color: #000;
   }
 }
 .top #slider {
@@ -178,7 +179,7 @@ header .top__Text p:last-child {
 }
 @media (min-width: 769px) {
   .top #slider {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -351,15 +352,18 @@ section {
   font-size: 14px;
 }
 
-.works__glid__box {
+.works__glid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
 }
 @media (min-width: 769px) {
-  .works__glid__box {
+  .works__glid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+}
+.works__glid__link:hover {
+  opacity: 0.6;
 }
 .works__glid__item {
   margin: 0;
