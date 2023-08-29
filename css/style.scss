@@ -58,31 +58,12 @@ img {
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
-    // padding: 0 4%;
 }
 
 .flex {
     display: flex;
 }
 
-
-
-// //gnav-------------
-// .mobile-menu {
-//     display: block;
-
-//     @include pc {
-//         display: none;
-//     }
-// }
-
-// .desktop-menu {
-//     display: none;
-
-//     @include pc {
-//         display: block;
-//     }
-// }
 
 #g-nav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -157,10 +138,6 @@ img {
     background-color: $black-color;
 }
 
-// .openbtn-box{
-//     max-width: 1000px;
-//     margin: 0 auto; 
-// }
 
 /*×に変化*/
 .openbtn span {
@@ -260,15 +237,9 @@ section {
     padding: 80px 8vw;
     max-width: 1100px;
 
-    // @include pc {
-    //     max-width: 80%;
-    //     margin: 0 auto 0 20%;
-    //     // padding-left: 20%;
-    //     padding-right: 13%;
-    //     padding-left: 7%;
-
-
-    // }
+    @include pc{
+        padding: 80px 50px;
+    }
 }
 
 
@@ -277,22 +248,18 @@ section {
     letter-spacing: 0.15em;
     font-weight: normal;
 
-    // @include pc {
-    //     font-size: 70px;
-    //     line-height: -10px;
-    //     line-height: 1;
-    //     padding-left: 10px;
-    // }
+    @include pc {
+        font-size: 36px;
+    }
 
     & span {
         font-size: 18px;
         padding-left: 5px;
         letter-spacing: 0.1em;
 
-        // @include pc {
-        //     font-size: 18px;
-        //     margin-left: 30px;
-        // }
+        @include pc {
+            font-size: 21px;
+        }
     }
 
     &__container {
@@ -307,6 +274,10 @@ section {
         & p {
             font-size: 14px;
             letter-spacing: 0.05em;
+
+            @include pc{
+                font-size: 16px;
+            }
 
             &::before {
                 content: "【";
@@ -375,7 +346,7 @@ section {
             display: grid;
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px 40px;
+            gap: 20px 80px;
             grid-auto-flow: column;
         }
     }
@@ -388,6 +359,10 @@ section {
             font-size: 16px;
             border-bottom: 1px solid $black-color;
 
+            @include pc{
+                padding-bottom: 5px;
+            }
+
             & span::before {
                 content: "/";
                 padding-right: 5px;
@@ -398,14 +373,22 @@ section {
         & dd {
             font-size: 13px;
             margin-bottom: 30px;
+
+            @include pc{
+                font-size: 14px;
+            }
         }
 
         & span,
         & time {
             opacity: 0.6;
             font-size: 12px;
-            // display: inline-block;
-            margin-bottom: 5px;
+            display: inline-block;
+            // margin-bottom: 5px;
+
+            @include pc{
+                font-size: 14px;
+            }
         }
 
 
