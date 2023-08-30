@@ -96,12 +96,16 @@ img {
   position: fixed;
   z-index: 1000;
   /*ボタンを最前面に*/
-  top: 4vh;
-  right: 0;
+  top: 18px;
+  right: 8vw;
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #000;
+}
+@media (min-width: 769px) {
+  .openbtn {
+    top: 20px;
+  }
 }
 
 /*×に変化*/
@@ -111,7 +115,7 @@ img {
   position: absolute;
   left: 7px;
   height: 1px;
-  background-color: #f8f8f8;
+  background-color: #000;
   width: 60%;
 }
 
@@ -143,13 +147,22 @@ header {
   text-align: center;
 }
 header .top__Title {
-  height: 12vh;
-  padding-top: 4vh;
+  top: 0;
+  z-index: 999;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  position: fixed;
+  width: 100%;
 }
 header .top__Title h1 {
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 0.3em;
   font-weight: normal;
+}
+@media (min-width: 769px) {
+  header .top__Title h1 {
+    font-size: 24px;
+  }
 }
 header .top__Text {
   height: 17vh;
@@ -163,6 +176,7 @@ header .top__Text p:last-child {
 }
 
 .top {
+  margin-top: 75px;
   width: 100vw;
   height: 60vh;
   position: relative;

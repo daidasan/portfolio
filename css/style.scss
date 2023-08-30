@@ -130,12 +130,15 @@ img {
     position: fixed;
     z-index: 1000;
     /*ボタンを最前面に*/
-    top: 4vh;
-    right: 0;
+    top: 18px;
+    right: 8vw;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: $black-color;
+
+    @include pc {
+        top: 20px;
+    }
 }
 
 
@@ -146,7 +149,7 @@ img {
     position: absolute;
     left: 7px;
     height: 1px;
-    background-color: $white-color;
+    background-color: $black-color;
     width: 60%;
 }
 
@@ -160,7 +163,7 @@ img {
 
 .openbtn.active span:nth-of-type(1) {
     top: 10px;
-    left:6px;
+    left: 6px;
     transform: translateY(6px) rotate(-45deg);
     width: 60%;
 }
@@ -182,13 +185,21 @@ header {
     text-align: center;
 
     & .top__Title {
-        height: 12vh;
-        padding-top: 4vh;
+        top: 0;
+        z-index: 999;
+        padding: 20px 0;
+        background-color: $white-color;
+        position: fixed;
+        width: 100%;
 
         & h1 {
-            font-size: 23px;
+            font-size: 21px;
             letter-spacing: 0.3em;
             font-weight: normal;
+
+            @include pc {
+                font-size: 24px;
+            }
         }
     }
 
@@ -210,6 +221,7 @@ header {
 
 
 .top {
+    margin-top: 75px;
     width: 100vw;
     height: 60vh;
     position: relative;
@@ -237,7 +249,7 @@ section {
     padding: 80px 8vw;
     max-width: 1100px;
 
-    @include pc{
+    @include pc {
         padding: 80px 50px;
     }
 }
@@ -275,7 +287,7 @@ section {
             font-size: 14px;
             letter-spacing: 0.05em;
 
-            @include pc{
+            @include pc {
                 font-size: 16px;
             }
 
@@ -359,7 +371,7 @@ section {
             font-size: 16px;
             border-bottom: 1px solid $black-color;
 
-            @include pc{
+            @include pc {
                 padding-bottom: 5px;
             }
 
@@ -374,7 +386,7 @@ section {
             font-size: 13px;
             margin-bottom: 30px;
 
-            @include pc{
+            @include pc {
                 font-size: 14px;
             }
         }
@@ -386,7 +398,7 @@ section {
             display: inline-block;
             // margin-bottom: 5px;
 
-            @include pc{
+            @include pc {
                 font-size: 14px;
             }
         }
@@ -474,7 +486,7 @@ section {
 
         &__link {
 
-            &:hover{
+            &:hover {
                 opacity: .6;
             }
         }
