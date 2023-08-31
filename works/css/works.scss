@@ -82,8 +82,7 @@ section {
     padding: 100px 8vw;
 
     @include pc {
-        padding: 100px 0;
-
+        padding: 100px 50px;
     }
 }
 
@@ -106,15 +105,7 @@ section {
 /*各スライドのスタイル*/
 .swiper-slide {
     flex-flow: column nowrap;
-    /*テキストの位置調整*/
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
-    // /*テキストの色と太さを指定*/
-    // color: #212121;
-    // font-weight: bold;
-    // font-size: max(0.5rem, 1.5vw);
 }
 
 /* スライダーのスタイル */
@@ -124,10 +115,6 @@ section {
     flex-grow: 1;
 }
 
-/* サムネイルのスタイル */
-// .swiper-thumbnail {
-//     // height: 50px;
-// }
 
 .swiper-thumbnail .swiper-wrapper {
     flex-direction: row;
@@ -213,11 +200,6 @@ section {
                 }
             }
         }
-
-
-
-
-
         @include pc {
             width: 40%;
         }
@@ -228,3 +210,4 @@ footer {
     border-top: 1px solid $black-color;
     padding: 30px 0;
 }
+
