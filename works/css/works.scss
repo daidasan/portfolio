@@ -165,9 +165,9 @@ section {
 
                 & a{
                     
-                    border-bottom: 1px solid #000;
+                    border-bottom: 3px solid $accent;
                     &:hover{
-                        color: &$accent;
+                        opacity: .7;
                     }
                 }
 

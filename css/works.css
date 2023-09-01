@@ -51,7 +51,7 @@ section {
 }
 @media (min-width: 769px) {
   section {
-    padding: 100px 0;
+    padding: 100px 50px;
   }
 }
 
@@ -73,7 +73,6 @@ section {
 /*各スライドのスタイル*/
 .swiper-slide {
   flex-flow: column nowrap;
-  /*テキストの位置調整*/
 }
 
 /* スライダーのスタイル */
@@ -83,7 +82,6 @@ section {
   flex-grow: 1;
 }
 
-/* サムネイルのスタイル */
 .swiper-thumbnail .swiper-wrapper {
   flex-direction: row;
 }
@@ -128,6 +126,12 @@ section {
 }
 .worksHtml__text__cap {
   margin-top: 30px;
+}
+.worksHtml__text__cap a {
+  border-bottom: 3px solid #dddcd6;
+}
+.worksHtml__text__cap a:hover {
+  opacity: 0.7;
 }
 .worksHtml__text__cap p {
   font-size: 14px;

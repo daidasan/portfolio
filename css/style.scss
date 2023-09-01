@@ -564,9 +564,12 @@ section {
             font-size: 14px;
         }
 
-        & address {
+        & a {
             font-style: normal;
             margin: 20px 0;
+            display: inline-block;
+            font-size: 18px;
+            border-bottom: 1px solid $black-color;
         }
     }
 
