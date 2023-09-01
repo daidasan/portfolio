@@ -101,6 +101,7 @@ section {
   .worksHtml__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media (min-width: 769px) {
@@ -136,6 +137,11 @@ section {
 .worksHtml__text__cap p {
   font-size: 14px;
 }
+.worksHtml__text__cap ol {
+  list-style-type: decimal-leading-zero;
+  font-size: 14px;
+  padding-left: 25px;
+}
 .worksHtml__text__cap__line {
   display: inline-block;
   width: 14px;
@@ -155,6 +161,19 @@ section {
   .worksHtml__text {
     width: 40%;
   }
+}
+
+.works__imgBox {
+  text-align: center;
+  margin: 30px 0;
+}
+.works__imgBox:nth-child(1) img {
+  width: 70px;
+  height: auto;
+}
+.works__imgBox:nth-child(1):nth-child(2) img {
+  width: 100px;
+  height: auto;
 }
 
 footer {
