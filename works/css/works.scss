@@ -164,6 +164,8 @@ section {
             margin-top: 30px;
 
                 & a{
+                    
+                    border-bottom: 1px solid #000;
                     &:hover{
                         color: &$accent;
                     }
