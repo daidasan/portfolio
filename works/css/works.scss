@@ -9,20 +9,10 @@ $pc: 769px;
     }
 }
 
-$white-color:
-/* #fdfcf9;
-/* #FAF9F6 */
-#f8f8f8;
-$black-color:#000
-/* #333132 */
-/* #180614 */
-;
-$accent:#C9171E
-/* #783438 */
-/* #E83929 */
-/* #832F12 */
-/* #7F6D35 */
-;
+$white-color:#f8f8f8;
+$black-color:#000;
+$accent:#dddcd6;
+
 //------------------------
 
 
@@ -155,7 +145,7 @@ section {
     &__text {
         margin-top: 30px;
 
-        @include pc{
+        @include pc {
             margin-top: 0;
         }
 
@@ -173,9 +163,16 @@ section {
         &__cap {
             margin-top: 30px;
 
+                & a{
+                    &:hover{
+                        color: &$accent;
+                    }
+                }
+
             & p {
                 font-size: 14px;
                 // margin-bottom: 30px;
+
             }
 
             &__line {
@@ -192,14 +189,16 @@ section {
                     font-size: 12px;
                 }
 
-                & dt::after{
+                & dt::after {
                     content: "：";
                 }
-                & dd{
+
+                & dd {
                     margin-bottom: 10px;
                 }
             }
         }
+
         @include pc {
             width: 40%;
         }
@@ -210,4 +209,3 @@ footer {
     border-top: 1px solid $black-color;
     padding: 30px 0;
 }
-
