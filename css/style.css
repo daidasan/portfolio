@@ -425,9 +425,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
-.works__glid__link:hover {
-  opacity: 0.6;
-}
 .works__glid__item {
   margin: 0;
   text-align: center;
@@ -446,6 +443,20 @@ section {
   font-size: 12px;
   padding-left: 10px;
   margin-right: 10px;
+}
+
+.zoom-box {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.zoom {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
 }
 
 .contact {
