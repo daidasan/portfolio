@@ -403,13 +403,13 @@ section {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
+  gap: 50px 30px;
   border: 1px solid #000;
 }
 .skill__container dt {
   margin-bottom: 7px;
   text-align: left;
-  font-size: 18px;
+  font-size: 21px;
 }
 .skill__container dl dd {
   font-size: 14px;
