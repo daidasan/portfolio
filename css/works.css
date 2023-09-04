@@ -140,7 +140,7 @@ section {
 .worksHtml__text__cap ol {
   list-style-type: decimal-leading-zero;
   font-size: 14px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .worksHtml__text__cap__line {
   display: inline-block;

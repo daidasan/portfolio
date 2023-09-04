@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAIDA MISUZU</title>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'soi2uzj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- works css -->
+    <link rel="stylesheet" href="../css/works.min.css">
+
+
+
+</head>
+
+
+<body>
+
+    <div class="closeBtn__box">
+        <a href="../video_01.html#web_02">
+            <div class="closeBtn"></div>
+        </a>
+    </div>
+
+    <!-- works--------------------------------------- -->
+    <section class="worksHtml">
+
+
+        <!-- <div class="sec__title__container">
+            <h2 class="sec__title works__title">Works<span>/03</span></h2>
+            <p>制作物</p>
+        </div> -->
+        <div class="worksHtml__container">
+
+
+            <div class="swiper">
+
+                <video src="img/video_01_01.mp4" controls playsinline></video>
+            </div>
+
+            <div class="worksHtml__text">
+                <div class="flex works__glid__cap">
+                    <time datetime="2023-08">2023.06</time>
+                    <p>Video</p>
+                </div>
+                <h3>CM&ensp;夜に嗜む本と映画とおやつの時間</h3>
+                <div class="worksHtml__text__cap">
+
+                    <p>
+
+                    </p>
+
+                    <span class="worksHtml__text__cap__line"></span>
+                    <dl class="worksHtml__text__cap__list">
+                        <dt>使用ツール</dt>
+                        <dd>
+                            Illustorator/ Photoshop/ PowerPoint</dd>
+                    </dl>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <small>&copy;2023 Misuzu Daida </small>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/works.js"></script>
+</body>
+
+</html>
