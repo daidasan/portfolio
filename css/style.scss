@@ -607,6 +607,12 @@ section {
             display: inline-block;
             font-size: 18px;
             border-bottom: 1px solid $black-color;
+            transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+            transition-duration: .4s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -642,6 +648,7 @@ footer {
         font-size: 12px;
         margin: 20px 0;
         display: inline-block;
+
 
         @include pc {
             margin: 0;
