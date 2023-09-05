@@ -403,13 +403,13 @@ section {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
+  gap: 50px 30px;
   border: 1px solid #000;
 }
 .skill__container dt {
   margin-bottom: 7px;
   text-align: left;
-  font-size: 18px;
+  font-size: 21px;
 }
 .skill__container dl dd {
   font-size: 14px;
@@ -424,9 +424,6 @@ section {
   .works__glid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-}
-.works__glid__link:hover {
-  opacity: 0.6;
 }
 .works__glid__item {
   margin: 0;
@@ -448,6 +445,20 @@ section {
   margin-right: 10px;
 }
 
+.zoom-box {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.zoom {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
 .contact {
   text-align: center;
   margin-top: 100px;
@@ -461,6 +472,11 @@ section {
   display: inline-block;
   font-size: 18px;
   border-bottom: 1px solid #000;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  transition-duration: 0.4s;
+}
+.contact__box a:hover {
+  transform: scale(1.1);
 }
 
 footer {

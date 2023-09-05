@@ -106,7 +106,7 @@ img {
     border-bottom: 1px solid $black-color;
     // border-left: 1px solid $black-color;
 
-    @include pc{
+    @include pc {
         font-size: 18px;
         padding: 30px;
     }
@@ -131,7 +131,7 @@ img {
     font-weight: normal;
     text-align: left;
 
-    &:hover{
+    &:hover {
         opacity: .6;
     }
 }
@@ -401,14 +401,14 @@ section {
 
         margin-bottom: 50px;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
 
-        @include pc{
+        @include pc {
             margin-bottom: 0;
         }
-        
+
         & dt {
             margin-bottom: 10px;
             font-size: 16px;
@@ -451,13 +451,13 @@ section {
     }
 }
 
-.about__event__imgbox{
+.about__event__imgbox {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 
-    & img{
+    & img {
         width: 48%;
         display: inline-block;
     }
@@ -511,13 +511,13 @@ section {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+    gap: 50px 30px;
     border: 1px solid $black-color;
 
     & dt {
         margin-bottom: 7px;
         text-align: left;
-        font-size: 18px;
+        font-size: 21px;
     }
 
     & dl dd {
@@ -540,12 +540,12 @@ section {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
-        &__link {
+        // &__link {
 
-            &:hover {
-                opacity: .6;
-            }
-        }
+        //     &:hover {
+        //         opacity: .6;
+        //     }
+        // }
 
 
         &__item {
@@ -575,6 +575,20 @@ section {
 
 
 
+.zoom-box {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.zoom {
+    display: block;
+    transition-duration: .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
 
 //contact
 
@@ -593,6 +607,12 @@ section {
             display: inline-block;
             font-size: 18px;
             border-bottom: 1px solid $black-color;
+            transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+            transition-duration: .4s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -628,6 +648,7 @@ footer {
         font-size: 12px;
         margin: 20px 0;
         display: inline-block;
+
 
         @include pc {
             margin: 0;
