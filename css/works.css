@@ -106,6 +106,9 @@ section {
 }
 @media (min-width: 769px) {
   .worksHtml__container .swiper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
     width: 50%;
   }
 }

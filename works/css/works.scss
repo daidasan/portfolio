@@ -139,7 +139,11 @@ section {
         & .swiper {
 
             @include pc {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 100px;
                 width: 50%;
+
             }
         }
     }
