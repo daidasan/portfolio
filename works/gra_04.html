@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misuzu Daida</title>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'soi2uzj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+        works / web_02.html
+    </script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Modaal -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <!-- ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- works css -->
+    <link rel="stylesheet" href="../css/works.min.css">
+
+
+
+</head>
+
+
+<body>
+
+    <div class="closeBtn__box">
+        <a href="../index.html#gra_04">
+            <div class="closeBtn"></div>
+        </a>
+    </div>
+
+    <!-- works--------------------------------------- -->
+    <section class="worksHtml">
+
+        <div class="worksHtml__container">
+            <div class="swiper">
+                <img src="img/fri.jpg" alt="">
+            </div>
+
+            <div class="worksHtml__text">
+
+                <div class="flex works__glid__cap">
+                    <time datetime="2020-06">2020.06〜</time>
+                    <p>Graphic</p>
+                </div>
+                <h3>喫茶店メニュー表</h3>
+
+                <div class="worksHtml__text__cap">
+
+                    <h4 class="worksHtml__text__cap__item">about</h4>
+                    <p>勤めていた喫茶店のメニュー表を作成しました。月替りの限定メニューは個性的なものが多いので、ユニークなネーミングや料理のビジュアルの世界観を崩さず、初見のお客様にインパクトを残すデザインになるよう意識しました。</p>
+                    <br><br>
+                    <p>メニュー表一覧　クリックすると大きくなります</p>
+                    <br>
+
+                    <ul class="gallery-list">
+                        <li class="zoom-box"><a href="img/fri_01.jpg" class="gallery" data-group="gallery"><img src="img/fri_01.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_02.jpg" class="gallery" data-group="gallery"><img src="img/fri_02.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_03.jpg" class="gallery" data-group="gallery"><img src="img/fri_03.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_10.jpg" class="gallery" data-group="gallery"><img src="img/fri_10.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_11.jpg" class="gallery" data-group="gallery"><img src="img/fri_11.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_12.jpg" class="gallery" data-group="gallery"><img src="img/fri_12.jpg" alt="" class="zoom"></a></li>
+
+                        <li class="zoom-box"><a href="img/fri_13.jpg" class="gallery" data-group="gallery"><img src="img/fri_13.jpg" alt="" class="zoom"></a></li>
+                    </ul>
+
+                    <span class="worksHtml__text__cap__line"></span>
+                    <dl class="worksHtml__text__cap__list">
+                        <dt>制作期間</dt>
+                        <dd>2時間/1枚</dd>
+                    </dl>
+                    <dl class="worksHtml__text__cap__list">
+                        <dt>使用ツール</dt>
+                        <dd>Illustrator/ Photoshop</dd>
+                    </dl>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <small>&copy;2023 Misuzu Daida</small>
+    </footer>
+
+    <!-- jQuery、Modaal -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/works.js"></script>
+</body>
+
+</html>

@@ -301,13 +301,6 @@ footer {
   background: #666;
 }
 
-@media (min-width: 769px) {
-  .gallery-list-box {
-    top: 100px;
-    width: 50%;
-  }
-}
-
 .gallery-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -320,6 +313,10 @@ footer {
 }
 .gallery-list li {
   border: 1px solid #dddcd6;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery-list li a {
   display: block;

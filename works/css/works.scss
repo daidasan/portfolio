@@ -365,15 +365,15 @@ footer {
     background: #666;
 }
 
-.gallery-list-box {
+// .gallery-list-box {
 
-    @include pc {
-        // position: -webkit-sticky;
-        // position: sticky;
-        top: 100px;
-        width: 50%;
-    }
-}
+//     @include pc {
+//         // position: -webkit-sticky;
+//         // position: sticky;
+//         top: 100px;
+//         width: 50%;
+//     }
+// }
 
 .gallery-list {
     display: grid;
@@ -387,6 +387,10 @@ footer {
 
     & li {
         border: 1px solid $accent;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+
 
 
         & a {
