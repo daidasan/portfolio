@@ -36,7 +36,7 @@ $accent:#dddcd6;
     position: fixed;
     width: 30px;
     height: 30px;
-    margin: 30px 30px 0 0;
+    margin: 20px 30px 0 0;
     z-index: 999;
 
     @include pc {
@@ -69,10 +69,10 @@ $accent:#dddcd6;
 section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 100px 8vw;
+    padding: 70px 8vw;
 
     @include pc {
-        padding: 100px 50px;
+        padding: 70px 50px;
     }
 }
 
@@ -84,7 +84,7 @@ section {
     height: auto;
     max-width: 600px;
     margin: 0;
-    
+
 }
 
 .swiper-container {
@@ -124,6 +124,17 @@ section {
 }
 
 
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.sp__none {
+    margin-bottom: 0;
+
+    @include pc {
+        margin-bottom: 20px;
+    }
+}
 
 .worksHtml {
 
@@ -141,7 +152,7 @@ section {
             @include pc {
                 position: -webkit-sticky;
                 position: sticky;
-                top: 100px;
+                top: 60px;
                 width: 50%;
 
             }
@@ -153,18 +164,10 @@ section {
         max-width: 600px;
         text-align: center;
 
-        @include pc{
+        @include pc {
             width: 50%;
 
         }
-
-        // & p {
-        //     font-size: 14px;
-        //     margin-top: 50px;
-        //     margin-bottom: 15px;
-        //     // border-bottom: 1px solid $black-color;
-        //     font-weight: bold;
-        // }
 
     }
 
@@ -176,25 +179,42 @@ section {
         }
 
         & .works__glid__cap {
-            justify-content: start;
+            justify-content: center;
+            margin: 0;
+
+            @include pc{
+                justify-content: start;
+            }
+
+            & p {
+                margin-bottom: 0;
+            }
         }
 
         & h3 {
             padding: 10px 0;
-            // display: inline-block;
             border-bottom: 1px solid $black-color;
             font-weight: normal;
+            font-size: 21px;
+            text-align: center;
+
+            @include pc{
+                text-align: left;
+            }
         }
 
         &__cap {
-            margin-top: 30px;
+            margin-top: 50px;
 
-            & a {
+            &__item {
+                font-size: 18px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                margin-top: 50px;
+                text-align: center;
 
-                border-bottom: 3px solid $accent;
-
-                &:hover {
-                    opacity: .7;
+                @include pc {
+                    text-align: left;
                 }
             }
 
@@ -202,9 +222,8 @@ section {
                 font-size: 14px;
                 // margin-bottom: 30px;
 
-                & .subcap{
-                    display: inline-block;
-                    margin-bottom: 5px;
+                @include pc {
+                    // margin-bottom: 50px;
                 }
 
             }
@@ -212,7 +231,27 @@ section {
             & ol {
                 list-style-type: decimal-leading-zero;
                 font-size: 14px;
-                padding-left: 30px;
+                padding-left: 35px;
+
+                @include pc {
+                    width: 60%;
+                }
+
+                & li {
+                    margin-bottom: 10px;
+                }
+            }
+
+            & .logo__flex {
+
+                margin-bottom: 30px;
+
+                @include pc {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
             }
 
             &__line {
@@ -224,44 +263,23 @@ section {
 
             &__list {
 
-                & dt,
-                & dd {
-                    font-size: 12px;
-                }
+                display: flex;
+                font-size: 12px;
 
-                & dt::after {
-                    content: "：";
+                & dt {
+                    min-width: 80px;
                 }
 
                 & dd {
                     margin-bottom: 10px;
+
                 }
             }
 
-            & ul {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-                gap: 10px;
-    
-                @include pc{
-                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    
-                }
-    
-                & li {
-                    border: 1px solid $accent;
-    
-                    & a {
-                        display: block;
-                    }
-                }
-    
-    
-            }
         }
 
         @include pc {
-            width: 40%;
+            width: 42%;
         }
     }
 }
@@ -270,18 +288,53 @@ section {
 
     &__01 {
         text-align: center;
+
+        @include pc {
+            width: 35%;
+        }
+
         & img {
             width: 100px;
             height: auto;
             margin: 20px 0;
         }
     }
+
     &__02 {
         text-align: center;
+
         & img {
             max-width: 300px;
             height: auto;
             margin: 20px 0;
+        }
+    }
+}
+
+.viewSite {
+    text-align: center;
+    margin-bottom: 40px;
+
+    & a {
+        display: block;
+        border: 1px solid $black-color;
+        box-shadow: 2px 2px 0 0 $black-color;
+        padding: 15px;
+        font-size: 16px;
+        // text-transform: uppercase;
+        line-height: 1;
+        transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+
+        @include pc {
+            font-size: 18px;
+        }
+
+
+        &:hover {
+            transform: translateY(2px);
+            box-shadow: none;
+            background-color: $black-color;
+            color: $white-color;
         }
     }
 }
@@ -310,4 +363,36 @@ footer {
 .modaal-close:hover:after,
 .modaal-close:hover:before {
     background: #666;
+}
+
+.gallery-list-box {
+
+    @include pc {
+        // position: -webkit-sticky;
+        // position: sticky;
+        top: 100px;
+        width: 50%;
+    }
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+
+    @include pc {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    }
+
+    & li {
+        border: 1px solid $accent;
+
+
+        & a {
+            display: block;
+        }
+    }
+
+
 }
