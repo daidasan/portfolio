@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+//変数--------------------
+$pc: 769px;
+
+@mixin pc {
+    @media(min-width:($pc)) {
+        @content;
+    }
+}
+
+$white-color:#f8f8f8;
+$black-color:#000;
+$accent:#dddcd6;
+
+//------------------------
+
+
+p{
+    font-size: 14px;
+}
+.closeBtn__box {
+    max-width: 1100px;
+    margin: 0 auto;
+    // background-color: $white-color;
+    // opacity: .6;
+
+    @include pc {
+        position: relative;
+    }
+}
+
+.closeBtn {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin: 20px 30px 0 0;
+    z-index: 999;
+
+    @include pc {
+        position: absolute;
+    }
+
+    &::before,
+    &::after {
+        /* 共通設定 */
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        /* 棒の幅（太さ） */
+        height: 30px;
+        /* 棒の高さ */
+        background: $black-color;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 70px 8vw;
+
+    @include pc {
+        padding: 70px 50px;
+    }
+}
+
+.eventHtml {
+
+    & .eventHtml__text {
+        margin-top: 30px;
+        border-bottom: 1px solid $black-color;
+        padding-bottom: 20px;
+
+
+        @include pc {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+
+        & h3 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        & .event__glid__cap {
+            font-size: 14px;
+            opacity: .6;
+        }
+    }
+
+
+    & .eventHtml__text__cap {
+        margin-top: 50px;
+
+        &__item {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+
+        & ul {
+            font-size: 14px;
+            
+        }
+    }
+
+    & .eventHtml__imgBox{
+        margin-top: 50px;
+        &_item{
+            margin-bottom: 10px;
+        }
+
+        & p{
+            margin-bottom: 20px;
+            @include pc{
+                margin-bottom: 30px;
+                br{
+                    display: none;
+                }
+            }
+        }
+        &__flex{
+            @include pc{
+                display: flex;
+
+                & div+div{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+footer {
+    border-top: 1px solid $black-color;
+    padding: 30px 0;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event&nbsp;|&nbsp;Misuzu Daida</title>
+    <meta name="description" content="代田美須寿ポートフォリオサイトのEventページです。">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'soi2uzj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <!-- ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- event css -->
+    <link rel="stylesheet" href="../css/event.min.css">
+
+
+
+</head>
+
+
+<body>
+
+    <div class="closeBtn__box">
+        <a href="../index.html#eve_04">
+            <div class="closeBtn"></div>
+        </a>
+    </div>
+
+    <section class="eventHtml">
+
+        <div class="eventHtml__text">
+            <h3>僕は僕を見ていた</h3>
+            <div class="flex event__glid__cap">
+                <time datetime="2021-10">2021.10</time>
+            </div>
+        </div>
+
+
+        <div class="eventHtml__text__cap">
+            <h4 class="eventHtml__text__cap__item">about</h4>
+            <p>25歳になり、子供の頃の自由な空想の世界を忘れないように行った個展です。幼い頃に比べて空想の世界は随分と小さくなりましたが、それでも確かにあった自分だけの世界を忘れないように書き留めた2冊の本と、これまで制作した作品を展示しました。また、初となる絵本の販売もしました。
+                <br><br>
+                event venue：ふらんす座
+            </p>
+        </div>
+        <div class="eventHtml__imgBox">
+            <div class="eventHtml__imgBox_item"><img src="img/eve-boku00.jpg" alt=""></div>
+            <div class="eventHtml__imgBox_item"><img src="img/eve_04_02.jpg" alt=""></div>
+            <div class="eventHtml__imgBox_item"><img src="img/eve_04_03.jpg" alt=""></div>
+            <div class="eventHtml__imgBox_item"><img src="img/eve_04_04.jpg" alt=""></div>
+            <div class="eventHtml__imgBox_item"><img src="img/eve_04_05.jpg" alt=""></div>
+
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <small>&copy;2023 Misuzu Daida</small>
+    </footer>
+
+    <script src="js/event.js"></script>
+</body>
+
+</html>

@@ -10,13 +10,9 @@ $pc: 769px;
 }
 
 $white-color:
-/* #fdfcf9;
-/* #FAF9F6 */
-#f8f8f8;
-$black-color:#000
-/* #333132 */
-/* #180614 */
-;
+/* #f8f8f8 */
+#fff;
+$black-color:#000;
 $accent:#dddcd6;
 //------------------------
 
@@ -24,11 +20,11 @@ $accent:#dddcd6;
 //共通部分---------------------------
 
 body {
-    font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
+    font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", serif;
     color: $black-color;
     background: $white-color;
-    line-height: 1.5;
-    letter-spacing: 0.07em;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
     font-weight: normal;
 
 }
@@ -59,6 +55,19 @@ img {
     display: flex;
 }
 
+
+
+.top__wrapper {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 8vw;
+
+    @include pc {
+        padding: 0;
+    }
+}
 
 #g-nav {
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -138,14 +147,18 @@ img {
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
-    position: relative;
+    position: absolute;
     z-index: 1000;
     /*ボタンを最前面に*/
-    // top: 18px;
-    // right: 8vw;
+    top: 0px;
+    right: 8vw;
     width: 35px;
     height: 35px;
     cursor: pointer;
+
+    @include pc {
+        right: 0;
+    }
 
 }
 
@@ -203,7 +216,6 @@ img {
 header {
     height: auto;
     width: 100%;
-    text-align: center;
 
     & .top__Title {
         top: 0;
@@ -212,26 +224,19 @@ header {
         background-color: $white-color;
         position: fixed;
         width: 100%;
+        font-size: 0;
 
-        & .flex {
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 8vw;
-
-            @include pc {
-                padding: 0 50px;
-            }
-        }
 
         & h1 {
             font-size: 21px;
             letter-spacing: 0.3em;
             font-weight: normal;
+            text-align: left;
+
 
             @include pc {
                 font-size: 24px;
+                text-align: center;
             }
         }
     }
@@ -239,6 +244,8 @@ header {
     & .top__Text {
         height: 17vh;
         padding-top: 4vh;
+        text-align: center;
+
 
         & p {
             font-size: 14px;
@@ -260,7 +267,7 @@ header {
     position: relative;
 
     @include pc {
-        height: 70vh;
+        height: 75vh;
         background-color: $black-color;
     }
 
@@ -344,6 +351,7 @@ section {
     text-align: center;
     letter-spacing: 0.15em;
     font-weight: normal;
+    line-height: 1.2;
 
     & span {
         font-size: 14px;
@@ -374,7 +382,11 @@ section {
 
     &__txtBox {
         @include pc {
-            width: 45%;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 50%;
+            border-left: 1px solid $black-color;
+
         }
     }
 
@@ -385,139 +397,64 @@ section {
 
 .about__event {
     &__box {
-        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px 30px;
 
-        @include pc {
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px 80px;
-            // grid-auto-flow: column;
-        }
-    }
+        & .event__glid__item {
+            margin: 0;
 
-    &__item {
-
-
-        margin-bottom: 50px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        @include pc {
-            margin-bottom: 0;
-        }
-
-        & dt {
-            margin-bottom: 10px;
-            font-size: 16px;
-            border-bottom: 1px solid $black-color;
-
-            @include pc {
-                padding-bottom: 5px;
-            }
-
-            & span::before {
-                content: "/";
-                padding-right: 5px;
-                margin-left: 10px;
+            & figcaption {
+                font-size: 16px;
             }
         }
 
-        & dd {
-            font-size: 13px;
-            margin-bottom: 30px;
-
-            @include pc {
-                font-size: 14px;
-                min-height: 85px;
-            }
+        & .event__glid__cap {
+            font-size: 14px;
+            opacity: .6;
+            margin-bottom: 5px;
         }
-
-        & span,
-        & time {
-            opacity: 0.6;
-            font-size: 12px;
-            display: inline-block;
-            // margin-bottom: 5px;
-
-            @include pc {
-                font-size: 14px;
-            }
-        }
-
-
     }
 }
-
-.about__event__imgbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-
-    & img {
-        width: 48%;
-        display: inline-block;
-    }
-}
-
-// .content {
-//     width: 300px;
-//     height: 200px;
-
-//     & img {
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//     }
-// }
-
-// .slideshow {
-//     display: flex;
-//     animation: loop-slide 60s infinite linear 1s both;
-// }
-
-// .event__slideshow__wrap {
-//     display: flex;
-//     align-items: center;
-//     overflow: hidden;
-// }
-
-// @keyframes loop-slide {
-//     from {
-//         transform: translateX(0);
-//     }
-
-//     to {
-//         transform: translateX(-100%);
-//     }
-// }
-
 
 
 //skill--------------------
 
 .about__skill {
+
     & .sec__title__container {
         margin-bottom: 0;
+    }
+
+    & .skill__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 1;
+
+        @include pc {
+            font-size: 26px;
+        }
     }
 }
 
 .skill__container {
-    margin-bottom: 80px;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 50px 30px;
-    border: 1px solid $black-color;
+    gap: 10px;
+
+    & dl {
+        padding: 20px;
+        background-color: rgba($color: $accent, $alpha: .3);
+    }
 
     & dt {
-        margin-bottom: 7px;
-        text-align: left;
+        margin-bottom: 10px;
+        text-align: center;
         font-size: 21px;
+
+        @include pc {
+            margin-bottom: 15px;
+        }
     }
 
     & dl dd {
@@ -534,18 +471,12 @@ section {
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 40px;
+        gap: 50px 10px;
 
         @include pc {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
-        // &__link {
-
-        //     &:hover {
-        //         opacity: .6;
-        //     }
-        // }
 
 
         &__item {
@@ -561,7 +492,7 @@ section {
             font-size: 14px;
             justify-content: center;
             opacity: .6;
-            margin: 7px 0 5px 0;
+            margin-bottom: 5px;
 
             & time::after {
                 content: "|";
@@ -610,30 +541,11 @@ section {
             transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
             transition-duration: .4s;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.1);
             }
         }
     }
-
-    // @include pc {
-
-    //     &__box {
-    //         position: relative;
-    //         width: 100%;
-
-    //         & footer {
-    //             height: 50px;
-    //             padding-top: 20%;
-    //             background-position: bottom 50px;
-
-    //             position: absolute;
-    //             bottom: 0;
-    //             right: 0;
-    //         }
-    //     }
-
-    // }
 }
 
 //footer---------------------------------------
@@ -669,4 +581,51 @@ footer {
 
 .bgc {
     background-color: #dddcd6;
+}
+
+
+
+// modaal
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area {
+    display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+    background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+    background: #666;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+
+    @include pc {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    }
+
+    & li {
+        border: 1px solid $accent;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+
+
+
+        & a {
+            display: block;
+        }
+    }
+
+
 }

@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-  font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", sans-serif;
+  font-family: "garamond-premier-pro", "fot-tsukuaoldmin-pr6n", serif;
   color: #000;
-  background: #f8f8f8;
-  line-height: 1.5;
-  letter-spacing: 0.07em;
+  background: #fff;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
   font-weight: normal;
 }
 
@@ -33,6 +33,18 @@ img {
   display: flex;
 }
 
+.top__wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 8vw;
+}
+@media (min-width: 769px) {
+  .top__wrapper {
+    padding: 0;
+  }
+}
+
 #g-nav {
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
   position: fixed;
@@ -43,7 +55,7 @@ img {
   width: 100%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #f8f8f8;
+  background: #fff;
   /*動き*/
   transition: all 0.6s;
 }
@@ -105,12 +117,19 @@ img {
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
-  position: relative;
+  position: absolute;
   z-index: 1000;
   /*ボタンを最前面に*/
+  top: 0px;
+  right: 8vw;
   width: 35px;
   height: 35px;
   cursor: pointer;
+}
+@media (min-width: 769px) {
+  .openbtn {
+    right: 0;
+  }
 }
 
 /*×に変化*/
@@ -165,41 +184,32 @@ img {
 header {
   height: auto;
   width: 100%;
-  text-align: center;
 }
 header .top__Title {
   top: 0;
   z-index: 999;
   padding: 20px 0;
-  background-color: #f8f8f8;
+  background-color: #fff;
   position: fixed;
   width: 100%;
-}
-header .top__Title .flex {
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 8vw;
-}
-@media (min-width: 769px) {
-  header .top__Title .flex {
-    padding: 0 50px;
-  }
+  font-size: 0;
 }
 header .top__Title h1 {
   font-size: 21px;
   letter-spacing: 0.3em;
   font-weight: normal;
+  text-align: left;
 }
 @media (min-width: 769px) {
   header .top__Title h1 {
     font-size: 24px;
+    text-align: center;
   }
 }
 header .top__Text {
   height: 17vh;
   padding-top: 4vh;
+  text-align: center;
 }
 header .top__Text p {
   font-size: 14px;
@@ -216,7 +226,7 @@ header .top__Text p:last-child {
 }
 @media (min-width: 769px) {
   .top {
-    height: 70vh;
+    height: 75vh;
     background-color: #000;
   }
 }
@@ -290,6 +300,7 @@ section {
   text-align: center;
   letter-spacing: 0.15em;
   font-weight: normal;
+  line-height: 1.2;
 }
 .content__title span {
   font-size: 14px;
@@ -318,7 +329,10 @@ section {
 }
 @media (min-width: 769px) {
   .about__me__txtBox {
-    width: 45%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+    border-left: 1px solid #000;
   }
 }
 .about__me p {
@@ -326,90 +340,54 @@ section {
 }
 
 .about__event__box {
-  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px 30px;
 }
-@media (min-width: 769px) {
-  .about__event__box {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px 80px;
-  }
+.about__event__box .event__glid__item {
+  margin: 0;
 }
-.about__event__item {
-  margin-bottom: 50px;
-}
-.about__event__item:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 769px) {
-  .about__event__item {
-    margin-bottom: 0;
-  }
-}
-.about__event__item dt {
-  margin-bottom: 10px;
+.about__event__box .event__glid__item figcaption {
   font-size: 16px;
-  border-bottom: 1px solid #000;
 }
-@media (min-width: 769px) {
-  .about__event__item dt {
-    padding-bottom: 5px;
-  }
-}
-.about__event__item dt span::before {
-  content: "/";
-  padding-right: 5px;
-  margin-left: 10px;
-}
-.about__event__item dd {
-  font-size: 13px;
-  margin-bottom: 30px;
-}
-@media (min-width: 769px) {
-  .about__event__item dd {
-    font-size: 14px;
-    min-height: 85px;
-  }
-}
-.about__event__item span, .about__event__item time {
+.about__event__box .event__glid__cap {
+  font-size: 14px;
   opacity: 0.6;
-  font-size: 12px;
-  display: inline-block;
-}
-@media (min-width: 769px) {
-  .about__event__item span, .about__event__item time {
-    font-size: 14px;
-  }
-}
-
-.about__event__imgbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-.about__event__imgbox img {
-  width: 48%;
-  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .about__skill .sec__title__container {
   margin-bottom: 0;
 }
+.about__skill .skill__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1;
+}
+@media (min-width: 769px) {
+  .about__skill .skill__title {
+    font-size: 26px;
+  }
+}
 
 .skill__container {
-  margin-bottom: 80px;
-  padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 50px 30px;
-  border: 1px solid #000;
+  gap: 10px;
+}
+.skill__container dl {
+  padding: 20px;
+  background-color: rgba(221, 220, 214, 0.3);
 }
 .skill__container dt {
-  margin-bottom: 7px;
-  text-align: left;
+  margin-bottom: 10px;
+  text-align: center;
   font-size: 21px;
+}
+@media (min-width: 769px) {
+  .skill__container dt {
+    margin-bottom: 15px;
+  }
 }
 .skill__container dl dd {
   font-size: 14px;
@@ -418,7 +396,7 @@ section {
 .works__glid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 50px 10px;
 }
 @media (min-width: 769px) {
   .works__glid {
@@ -436,7 +414,7 @@ section {
   font-size: 14px;
   justify-content: center;
   opacity: 0.6;
-  margin: 7px 0 5px 0;
+  margin-bottom: 5px;
 }
 .works__glid__cap time::after {
   content: "|";
@@ -508,5 +486,44 @@ footer img {
 
 .bgc {
   background-color: #dddcd6;
+}
+
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area {
+  display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #666;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+@media (min-width: 769px) {
+  .gallery-list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+.gallery-list li {
+  border: 1px solid #dddcd6;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-list li a {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

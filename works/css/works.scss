@@ -171,35 +171,45 @@ section {
 
     }
 
-    &__text {
-        margin-top: 30px;
+    &__text{
+
 
         @include pc {
-            margin-top: 0;
+            width: 42%;
         }
 
-        & .works__glid__cap {
-            justify-content: center;
-            margin: 0;
-
-            @include pc{
-                justify-content: start;
-            }
-
-            & p {
-                margin-bottom: 0;
-            }
-        }
-
-        & h3 {
-            padding: 10px 0;
+        & .worksHtml__title {
+            margin-top: 50px;
             border-bottom: 1px solid $black-color;
-            font-weight: normal;
-            font-size: 21px;
-            text-align: center;
-
-            @include pc{
-                text-align: left;
+            padding-bottom: 20px;
+    
+    
+            @include pc {
+                margin-top: 0;
+            }
+    
+            & h3 {
+                // padding: 10px 0;
+                font-weight: normal;
+                font-size: 21px;
+                // text-align: center;
+    
+                // @include pc{
+                //     text-align: left;
+                // }
+            }
+    
+            & .works__glid__cap {
+                justify-content: start;
+                margin: 0;
+    
+                // @include pc{
+                //     justify-content: start;
+                // }
+    
+                & p {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -211,11 +221,11 @@ section {
                 margin-bottom: 15px;
                 text-transform: uppercase;
                 margin-top: 50px;
-                text-align: center;
+                // text-align: center;
 
-                @include pc {
-                    text-align: left;
-                }
+                // @include pc {
+                //     text-align: left;
+                // }
             }
 
             & p {
@@ -276,10 +286,6 @@ section {
                 }
             }
 
-        }
-
-        @include pc {
-            width: 42%;
         }
     }
 }
@@ -342,61 +348,4 @@ section {
 footer {
     border-top: 1px solid $black-color;
     padding: 30px 0;
-}
-
-
-
-// modaal
-/*全て共通：hideエリアをはじめは非表示*/
-.hide-area {
-    display: none;
-}
-
-/*全て共通：モーダルのボタンの色を変更したい場合*/
-.modaal-close:after,
-.modaal-close:before {
-    background: #ccc;
-}
-
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before {
-    background: #666;
-}
-
-// .gallery-list-box {
-
-//     @include pc {
-//         // position: -webkit-sticky;
-//         // position: sticky;
-//         top: 100px;
-//         width: 50%;
-//     }
-// }
-
-.gallery-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 10px;
-
-    @include pc {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
-    }
-
-    & li {
-        border: 1px solid $accent;
-        height: 100%;
-        width: auto;
-        object-fit: cover;
-
-
-
-        & a {
-            display: block;
-        }
-    }
-
-
 }

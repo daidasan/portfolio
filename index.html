@@ -20,6 +20,8 @@
 
     <!-- スライドショー -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <!-- Modaal -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 
     <script>
         (function (d) {
@@ -62,9 +64,9 @@
 <body>
     <header>
         <div class="top__Title">
-            <div class="flex">
-                <div></div>
-                <h1>Misuzu&nbsp;Daida</h1>
+
+            <div class="top__wrapper">
+                <h1><a href="index.html">Misuzu&nbsp;Daida</a></h1>
                 <button class="openbtn-box">
                     <div class="openbtn"><span></span><span></span></div>
                 </button>
@@ -124,7 +126,7 @@
 
             <div class="about__skill">
                 <div class="sec__title__container">
-                    <h3 class="content__title">SKILL<br><span>出来ること</span></h3>
+                    <h3 class="content__title skill__title">SKILL<br><span>出来ること</span></h3>
                 </div>
                 <div class="skill__container sec__content__box">
                     <dl>
@@ -362,87 +364,81 @@
             <h2 class="sec__title contact__title">Event<span>/04</span></h2>
             <p>開催/参加イベント</p>
         </div>
+
         <div class="about__event">
-            <!-- <div class="event__slideshow__wrap">
-                <ul class="slideshow">
-                    <li class="content"><img src="img/event-01.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-02.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-03.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-04.jpeg" alt=""></li>
-                </ul>
-                <ul class="slideshow">
-                    <li class="content"><img src="img/event-01.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-02.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-03.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-04.jpeg" alt=""></li>
-                </ul>
-                <ul class="slideshow">
-                    <li class="content"><img src="img/event-01.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-02.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-03.jpg" alt=""></li>
-                    <li class="content"><img src="img/event-04.jpeg" alt=""></li>
-                </ul>
-            </div> -->
             <div class="about__event__box">
 
-                <div class="about__event__item">
-                    <dl>
-                        <dt><time datetime="2017-01-28">2017.01.28</time>-<time datetime="2017-01-29">29</time><span>Smart one Gallery</span><br>真夜中の晩餐展</dt>
-                        <dd>専門学校の卒業制作で開催した個展。
-                            本4冊と原画などを展示。コンセプトは「読んで心で食べる本」
-                            食べ物がテーマに入っており、4冊を読み終えたらフルコースが完成する。卒業制作の審査では優秀賞をいただいた。</dd>
-                    </dl>
+                <a href="event/eve_01.html" class="works__glid__link" id="eve_01">
+                    <figure class="event__glid__item">
 
-                    <div class="about__event__imgbox">
-                        <img src="img/gra-01-04.jpg" alt=""><img src="img/gra-01-03.jpg" alt="">
-                    </div>
-                </div>
+                        <div class="zoom-box"><img src="img/eve-mono01.jpg" alt="" class="event__glid__img zoom"></div>
 
+                        <div class="flex event__glid__cap">
+                            <time datetime="2023-03-05">2023.03.05</time>
+                        </div>
+                        <figcaption class="works__glid__text">モノつくり市</figcaption>
+                    </figure>
+                </a>
 
+                <a href="event/eve_02.html" class="works__glid__link" id="eve_02">
+                    <figure class="event__glid__item">
 
-                <div class="about__event__item">
-                    <dl>
-                        <dt><time datetime="2021-10">2021.10</time><span>ふらんす座</span><br>僕は僕を見ていた</dt>
-                        <dd>2冊の本と、それまでの制作物の展示。25歳になり、子供の頃自由自在に行き来していた空想の世界を忘れないために本に書きとどめた。2冊のうち1冊は販売もした。</dd>
-                    </dl>
-                    <div class="about__event__imgbox">
-                        <img src="img/gra-02-03.jpg" alt=""><img src="img/gra-02-04.jpg" alt="">
-                    </div>
-                </div>
+                        <div class="zoom-box"><img src="img/eve-hon01.jpg" alt="" class="event__glid__img zoom"></div>
 
-                <div class="about__event__item">
-                    <dl>
-                        <dt><time datetime="2022-03-11">2022.03.11</time><span>ヲルガン座</span><br>夜に嗜む本と映画とおやつの時間</dt>
-                        <dd>映画や小説を見ながら、そのストーリーに纏わるおやつやパン等の提供をするイベントを行った。メニューやメニュー表は手作りで、パンは尾道のパン屋さんへお願いして販売させていただいた。
-                        </dd>
-                    </dl>
-                    <div class="about__event__imgbox">
-                        <img src="img/eve-oyatu01.jpg" alt=""><img src="img/eve-oyatu02.jpg" alt="">
-                    </div>
-                </div>
+                        <div class="flex event__glid__cap">
+                            <time datetime="2023-01-31">2023.01.31</time>
+                        </div>
+                        <figcaption class="works__glid__text">卒業イベント～本の住人になる編～</figcaption>
+                    </figure>
+                </a>
 
-                <div class="about__event__item">
-                    <dl>
-                        <dt><time datetime="2023-01-31">2023.01.31</time><span>ヲルガン座</span><br>卒業イベント～本の住人になる編～
-                        </dt>
-                        <dd>勤めていた喫茶店「ヲルガン座」を退職する際行った卒業イベント。お世話になった方々にご挨拶やお礼を伝え、その人を連想した動物で似顔絵を描く会を行った。節目にと制作したZINEや、それまでに制作した本などの展示もした。
-                        </dd>
-                    </dl>
-                    <div class="about__event__imgbox">
-                        <img src="img/eve-hon01.jpg" alt=""><img src="img/eve-hon02.jpg" alt="">
-                    </div>
-                </div>
+                <a href="event/eve_03.html" class="works__glid__link" id="eve_03">
+                    <figure class="event__glid__item">
 
-                <div class="about__event__item">
-                    <dl>
-                        <dt><time datetime="2023-03-05">2023.03.05</time><span>ヲルガン座</span><br>モノつくり市</dt>
-                        <dd>ハンドメイド作家の集まる、雑貨販売のイベントにお誘いをいただて参加した。蝶の標本を模したウッドブローチや手描きイラストをあしらった一筆箋。月の形をした焼菓子などを販売した。</dd>
-                    </dl>
-                    <div class="about__event__imgbox">
-                        <img src="img/eve-mono01.jpg" alt=""><img src="img/eve-mono02.jpg" alt="">
-                    </div>
-                </div>
+                        <div class="zoom-box"><img src="img/eve-oyatu00.jpg" alt="" class="event__glid__img zoom"></div>
 
+                        <div class="flex event__glid__cap">
+                            <time datetime="2022-03-11">2022.03.11</time>
+                        </div>
+                        <figcaption class="works__glid__text">夜に嗜む本と映画とおやつの時間</figcaption>
+                    </figure>
+                </a>
+
+                <a href="event/eve_04.html" class="works__glid__link" id="eve_04">
+                    <figure class="event__glid__item">
+
+                        <div class="zoom-box"><img src="img/eve-boku00.jpg" alt="" class="event__glid__img zoom"></div>
+
+                        <div class="flex event__glid__cap">
+                            <time datetime="2021-10">2021.10</time>
+                        </div>
+                        <figcaption class="works__glid__text">僕は僕を見ていた</figcaption>
+                    </figure>
+                </a>
+
+                <a href="event/eve_05.html" class="works__glid__link" id="eve_05">
+                    <figure class="event__glid__item">
+
+                        <div class="zoom-box"><img src="img/eve-bansan00.jpg" alt="" class="event__glid__img zoom"></div>
+
+                        <div class="flex event__glid__cap">
+                            <time datetime="2017-01-28">2017.01.28</time>-<time datetime="2017-01-29">29</time>
+                        </div>
+                        <figcaption class="works__glid__text">真夜中の晩餐展</figcaption>
+                    </figure>
+                </a>
+
+                <a href="event/eve_06.html" class="works__glid__link" id="eve_06">
+                    <figure class="event__glid__item">
+
+                        <div class="zoom-box"><img src="img/eve-koppe.jpg" alt="" class="event__glid__img zoom"></div>
+
+                        <div class="flex event__glid__cap">
+                            <time datetime="2016-01-28">2016.10〜</time>
+                        </div>
+                        <figcaption class="works__glid__text">ハンドメイド雑貨　コッペパン</figcaption>
+                    </figure>
+                </a>
 
             </div>
         </div>
@@ -469,6 +465,10 @@
 
     <!-- gnav -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- jQuery、Modaal -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
 
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
