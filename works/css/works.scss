@@ -286,10 +286,17 @@ section {
                 }
             }
 
+
         }
     }
 }
 
+.underLine{
+    border-bottom: 1px solid #000;
+    line-height: 1.1;
+    display: inline-block;
+    margin: 0 5px;
+}
 .works__imgBox {
 
     &__01 {
